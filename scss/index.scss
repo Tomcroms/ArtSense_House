@@ -980,3 +980,31 @@ $linear_btn_footer2: #2b3546;
         }
     }
 } 
+
+@media screen and (max-width: 1000px) {
+    .accueil
+    {
+        &__div_txt
+        {
+            .innovative
+            {
+                font-size: 40px;
+                line-height: 40px;
+            }
+            .digital
+            {
+                font-size: 50px;
+                line-height: 90px;   
+            }
+            .art
+            {
+                font-size: 50px;
+                line-height: 60px; 
+            }
+        }
+        &__div_description
+        {
+            font-size: 20px;
+        }
+    }
+} 

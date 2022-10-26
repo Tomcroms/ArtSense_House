@@ -807,5 +807,22 @@
     font-size: 30px;
   }
 }
+@media screen and (max-width: 1000px) {
+  .accueil__div_txt .innovative {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .accueil__div_txt .digital {
+    font-size: 50px;
+    line-height: 90px;
+  }
+  .accueil__div_txt .art {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .accueil__div_description {
+    font-size: 20px;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
