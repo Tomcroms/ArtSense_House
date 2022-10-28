@@ -253,6 +253,11 @@
   box-sizing: border-box;
   padding-top: 50px;
 }
+.ecosystem canvas {
+  width: 100%;
+  height: auto;
+  border: solid white;
+}
 .ecosystem p {
   width: 80%;
   margin: 0 auto;
@@ -659,6 +664,7 @@
 .footer__center__btn {
   width: 100%;
   height: 40px;
+  margin-bottom: 30px;
 }
 .footer__center__logos {
   margin: 10px auto;

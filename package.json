@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch scss/index.scss:css/index.css"
+    "sass": "sass --watch scss/index.scss:css/index.css --watch scss/gallery.scss:css/gallery.css --watch scss/quest.scss:css/quest.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@splinetool/runtime": "^0.9.133"
+  }
 }
