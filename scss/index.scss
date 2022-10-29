@@ -53,13 +53,13 @@ $linear_btn_footer2: #2b3546;
 .header
 {
     display: flex;
-    padding-top: 50px;
-    height: 120px;
+    padding-top: 20px;  
+    height: 80px;
     width: 100%; 
     &__logo
     {
-        height: auto;
-        width: 150px;
+        height: 50px;
+        width: auto;
         margin: 0 50px 0 63px;
     }
     &__center
@@ -84,7 +84,7 @@ $linear_btn_footer2: #2b3546;
                 border: solid $bordure 1px;
                 margin-top: 2.5px;
                 margin-right: 40px;
-                img
+                img 
                 {
                     margin-top: 2px; 
                     margin-left: 8px; 
