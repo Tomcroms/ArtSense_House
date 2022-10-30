@@ -20,6 +20,13 @@ $linear_btn_footer2: #2b3546;
     font-family: "Montserrat"; //font-style: italic; pour l'italic
 }
 
+.cliquable
+{
+    display: block;
+    height: fit-content;
+    width: fit-content;
+}
+
 .body
 {
     background-image: url("../img/background.svg");
@@ -53,14 +60,14 @@ $linear_btn_footer2: #2b3546;
 .header
 {
     display: flex;
-    padding-top: 50px;
-    height: 120px;
+    padding-top: 20px;
+    height: 80px;
     width: 100%; 
     &__logo
     {
-        height: auto;
-        width: 150px;
-        margin: 0 50px 0 63px;
+        height: 50px;
+        width: auto;
+        margin: 7px 50px 0 63px;
     }
     &__center
     {

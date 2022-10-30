@@ -7,6 +7,12 @@
   font-family: "Montserrat";
 }
 
+.cliquable {
+  display: block;
+  height: fit-content;
+  width: fit-content;
+}
+
 .body {
   background-image: url("../img/background.svg");
   background-size: cover;
@@ -32,14 +38,14 @@
 
 .header {
   display: flex;
-  padding-top: 50px;
-  height: 120px;
+  padding-top: 20px;
+  height: 80px;
   width: 100%;
 }
 .header__logo {
-  height: auto;
-  width: 150px;
-  margin: 0 50px 0 63px;
+  height: 50px;
+  width: auto;
+  margin: 7px 50px 0 63px;
 }
 .header__center {
   display: flex;
