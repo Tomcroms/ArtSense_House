@@ -262,7 +262,7 @@
 .ecosystem__bloc {
   width: 80%;
   height: fit-content;
-  padding: 3vw 4vw;
+  padding: 5vw 4vw;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.05);
   display: flex;
@@ -495,6 +495,7 @@
   border: solid #f3f3f4 1px;
   box-sizing: border-box;
   padding: 0 50px;
+  position: relative;
 }
 .services__main__left {
   width: 48%;
@@ -504,22 +505,18 @@
   overflow: hidden;
 }
 .services__main__left__1 {
-  position: relative;
-  left: -100px;
+  left: -110%;
   justify-content: flex-end;
 }
 .services__main__left__2 {
-  position: relative;
-  left: -160px;
+  left: -130%;
 }
 .services__main__left__3 {
-  position: relative;
-  left: -50px;
+  left: -110%;
   justify-content: flex-end;
 }
 .services__main__left__4 {
-  position: relative;
-  left: -160px;
+  left: -130%;
 }
 .services__main__center {
   width: 4%;
@@ -592,20 +589,16 @@
   overflow: hidden;
 }
 .services__main__right__1 {
-  position: relative;
-  right: -200px;
+  right: -130%;
 }
 .services__main__right__2 {
-  position: relative;
-  right: -100px;
+  right: -110%;
 }
 .services__main__right__3 {
-  position: relative;
-  right: -200px;
+  right: -130%;
 }
 .services__main__right__4 {
-  position: relative;
-  right: -40px;
+  right: -110%;
 }
 
 .h1 {

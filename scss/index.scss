@@ -337,7 +337,7 @@ $linear_btn_footer2: #2b3546;
     {
         width: 80%;   
         height: fit-content;
-        padding: 3vw 4vw;  
+        padding: 5vw 4vw;  
         border-radius: 30px;
         background-color: rgba(255,255,255,0.05);
 
@@ -616,6 +616,7 @@ $linear_btn_footer2: #2b3546;
             border: solid $bordure 1px;
             box-sizing: border-box;
             padding: 0 50px;
+            position: relative;
         }
         &__left
         {
@@ -626,25 +627,21 @@ $linear_btn_footer2: #2b3546;
             overflow: hidden;
             &__1
             {
-                position: relative;
-                left: -100px;
+                left: -110%;
                 justify-content: flex-end;
             }
             &__2
             {
-                position: relative;
-                left: -160px;
+                left: -130%;
             }
             &__3
             {
-                position: relative;
-                left: -50px;
+                left: -110%;
                 justify-content: flex-end;
             }
             &__4
             {
-                position: relative;
-                left: -160px;
+                left: -130%;
             }
         }
         &__center
@@ -728,23 +725,19 @@ $linear_btn_footer2: #2b3546;
             overflow: hidden;
             &__1
             {
-                position: relative;
-                right: -200px;
+                right: -130%;
             }
             &__2
             {
-                position: relative;
-                right: -100px;
+                right: -110%;
             }
             &__3
             {
-                position: relative;
-                right: -200px;
+               right: -130%;
             }
             &__4
             {
-                position: relative;
-                right: -40px;
+                right: -110%;
             }
         }
     }
