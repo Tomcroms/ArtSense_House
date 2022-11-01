@@ -23,8 +23,8 @@ $linear_btn_footer2: #2b3546;
 .body
 {
     background-image: url("../img/background.svg");
-    background-size: cover; 
-    color: $baseTxt;
+    background-size: cover;    
+    color: $baseTxt;  
     display: flex;  
     flex-direction: column;
     align-items: center;
@@ -273,8 +273,17 @@ $linear_btn_footer2: #2b3546;
             justify-content: flex-end;
             font-size: 4vw;
             line-height: 4vw;
+            &__o
+            {
+                height: 4.6vw; 
+                width: 4.6vw; 
+                //border-style: solid solid solid none;
+                border-radius: 2.3vw 2.3vw 2.3vw 2.3vw;        
+                border: 1vw solid transparent;
+                background: linear-gradient(to right, #001927, #001a2d) padding-box, $linear_titre border-box;
+            } 
         }
-        .digital
+        .digital 
         {
             width: 100%;
             display: flex;
@@ -282,10 +291,10 @@ $linear_btn_footer2: #2b3546;
             justify-content: flex-end;
 
             font-size: 5.2vw;
+            font-weight: 700; 
             line-height: 8vw;   
-            color: transparent;  
-            -webkit-text-stroke: 1px $baseTxt;
-            text-stroke: 1px $baseTxt; 
+            -webkit-text-fill-color: transparent;  
+            -webkit-text-stroke-width: 1px; 
             .rond1{
                 width: 14%;
                 padding-top: 14%;

@@ -1,5 +1,17 @@
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.to(".innovative__o",{
+    scrollTrigger: {
+        trigger: ".header",
+        start: "top top",
+        end: "+=150px",   
+        scrub: true, 
+        toggleActions: "restart pause reverse pause"
+    },
+    width: "8vw", 
+
+}); 
+
 gsap.to(".services__main__left__1",{
     scrollTrigger: {
         trigger: ".services",
@@ -82,7 +94,7 @@ gsap.to(".services__main__right__4",{
     scrollTrigger: {
         trigger: ".services",
         start: "300px bottom",
-        end: "200px top",  
+        end: "200px top",   
         scrub: 2, 
         toggleActions: "restart pause reverse pause"
     },

@@ -209,16 +209,23 @@
   font-size: 4vw;
   line-height: 4vw;
 }
+.accueil__div_txt .innovative__o {
+  height: 4.6vw;
+  width: 4.6vw;
+  border-radius: 2.3vw 2.3vw 2.3vw 2.3vw;
+  border: 1vw solid transparent;
+  background: linear-gradient(to right, #001927, #001a2d) padding-box, linear-gradient(to right, #73cdda, #437b81) border-box;
+}
 .accueil__div_txt .digital {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   font-size: 5.2vw;
+  font-weight: 700;
   line-height: 8vw;
-  color: transparent;
-  -webkit-text-stroke: 1px #f3f3f4;
-  text-stroke: 1px #f3f3f4;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
 }
 .accueil__div_txt .digital .rond1 {
   width: 14%;
