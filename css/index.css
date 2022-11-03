@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap");
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border: none;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #001927;
+  border-radius: 20px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -378,8 +392,7 @@
 }
 .speedy__carroussel .ligne img:hover {
   cursor: pointer;
-  transform: scale(115%);
-  margin: 0 15px;
+  transform: rotate(20deg);
 }
 .speedy__carroussel .ligne .nftLigne1 {
   position: relative;

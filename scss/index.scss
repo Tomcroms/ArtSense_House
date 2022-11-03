@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap');
 
 
+::-webkit-scrollbar
+{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    border: none;
+    background-color: transparent; 
+} 
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #001927;
+    border-radius: 20px;
+}
+
 $baseTxt: #f3f3f4;
 $bordure: #f3f3f4;
 
@@ -472,11 +488,16 @@ $linear_btn_footer2: #2b3546;
                 border-radius: 5px; 
                 margin: 0 5px;
                 transition: all 0.4s; 
+                // &:hover
+                // {
+                //     cursor: pointer;
+                //     transform: scale(115%);  
+                //     margin: 0 15px;    
+                // }
                 &:hover
                 {
                     cursor: pointer;
-                    transform: scale(115%);  
-                    margin: 0 15px;    
+                    transform: rotate(20deg);
                 }
             }
             .nftLigne1
