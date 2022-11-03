@@ -3,7 +3,7 @@
 
 ::-webkit-scrollbar
 {
-    width: 20px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -286,7 +286,7 @@ $linear_btn_footer2: #2b3546;
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: flex-start; 
             font-size: 4vw;
             line-height: 4vw;
             &__o
@@ -647,6 +647,7 @@ $linear_btn_footer2: #2b3546;
             box-sizing: border-box;
             padding: 0 50px;
             position: relative;
+            transition: all 0.5s;
         }
         &__left
         {
@@ -659,6 +660,11 @@ $linear_btn_footer2: #2b3546;
             {
                 left: -110%;
                 justify-content: flex-end;
+                transition: all 0.5s;
+                &:hover
+                {
+                    height: 16vw; 
+                }
             }
             &__2
             {
@@ -668,6 +674,11 @@ $linear_btn_footer2: #2b3546;
             {
                 left: -110%;
                 justify-content: flex-end;
+                transition: all 0.5s;
+                &:hover
+                {
+                    height: 16vw; 
+                }
             }
             &__4
             {
@@ -760,6 +771,11 @@ $linear_btn_footer2: #2b3546;
             &__2
             {
                 right: -110%;
+                transition: all 0.5s;
+                &:hover
+                {
+                    height: 16vw; 
+                }
             }
             &__3
             {
@@ -768,6 +784,11 @@ $linear_btn_footer2: #2b3546;
             &__4
             {
                 right: -110%;
+                transition: all 0.5s;
+                &:hover
+                {
+                    height: 16vw; 
+                } 
             }
         }
     }

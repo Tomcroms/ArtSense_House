@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap");
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -219,7 +219,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   font-size: 4vw;
   line-height: 4vw;
 }
@@ -516,6 +516,7 @@
   box-sizing: border-box;
   padding: 0 50px;
   position: relative;
+  transition: all 0.5s;
 }
 .services__main__left {
   width: 48%;
@@ -527,6 +528,10 @@
 .services__main__left__1 {
   left: -110%;
   justify-content: flex-end;
+  transition: all 0.5s;
+}
+.services__main__left__1:hover {
+  height: 16vw;
 }
 .services__main__left__2 {
   left: -130%;
@@ -534,6 +539,10 @@
 .services__main__left__3 {
   left: -110%;
   justify-content: flex-end;
+  transition: all 0.5s;
+}
+.services__main__left__3:hover {
+  height: 16vw;
 }
 .services__main__left__4 {
   left: -130%;
@@ -613,12 +622,20 @@
 }
 .services__main__right__2 {
   right: -110%;
+  transition: all 0.5s;
+}
+.services__main__right__2:hover {
+  height: 16vw;
 }
 .services__main__right__3 {
   right: -130%;
 }
 .services__main__right__4 {
   right: -110%;
+  transition: all 0.5s;
+}
+.services__main__right__4:hover {
+  height: 16vw;
 }
 
 .h1 {
