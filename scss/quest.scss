@@ -3,8 +3,9 @@
 
 $baseTxt: #f3f3f4;
 $bordure: #f3f3f4;
+$transparent_bg: rgba(255,255,255,0.05);   
 
-$linear_titre: linear-gradient(to right, #73cdda, #437b81);
+$linear_titre: linear-gradient(to right, #be49df, #43d4af);
 
 //$linear_titre1: #73cdda;
 //$linear_titre2: #437b81;
@@ -19,6 +20,14 @@ $linear_btn_footer2: #2b3546;
     border: none;
     font-family: "Montserrat"; //font-style: italic; pour l'italic
 }
+
+.title_sep
+{
+    height: 1px;
+    width: 25%;    
+    margin: 15px auto 50px auto; 
+    background-image: $linear_titre; 
+} 
 
 .cliquable
 {
@@ -35,15 +44,15 @@ $linear_btn_footer2: #2b3546;
     display: flex;  
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-    min-width: 1000px; 
-    max-width: 1700px;
+    margin: 0 auto; 
+    min-width: 1200px;
+    max-width: 2500px; 
 }
 
 .btn_bg
 {
     border-radius: 28px;
-    background-image: linear-gradient(to right, #71c9d7, #478088);
+    background-image: linear-gradient(to right, #8763dd, #43d5ae);
     color: black;
     font-size: 14px;
     font-weight: 900; 
@@ -78,7 +87,7 @@ $linear_btn_footer2: #2b3546;
         {
             display: flex;
             position: relative;
-            margin-right: auto; 
+            margin-right: auto;  
             .center1__recherche
             {
                 display: flex;
@@ -148,277 +157,373 @@ $linear_btn_footer2: #2b3546;
         margin-right: 25px; 
     }
 }
-
-.main
+.infoBloc
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    &__info
+    position: relative;
+    padding: 10px 20px; 
+    border-radius: 30px;
+    width: 40%; 
+    height: fit-content; 
+    margin: 110px auto 60px auto;
+    background: linear-gradient(to right, #30204e, #1a3850) padding-box, $linear_titre border-box;
+    border: 5px solid transparent;
+    h2
     {
-        width: 60%;  
-        height: fit-content;
-        margin: 100px auto; 
-        padding: 15px 5px;
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-        &__left
+        margin-bottom: 5px;
+        font-size: 2.2vw;
+        font-weight: 900;
+    } 
+    h3
+    {
+        margin-bottom: 10px; 
+        font-size: 1.3vw;   
+        font-style: italic; 
+        font-weight: 100; 
+    }
+    img
+    {
+        position: absolute;
+        left: 100%;    
+        top: 10%;  
+        width: 40%; 
+        transform: translate(-50%,-50%);
+    } 
+}
+
+.trendyChallenges_title
+{
+    width: fit-content;  
+    padding: 0 15px;
+    height: fit-content;
+    margin: 40px auto 0 auto; 
+    font-size: 1.8vw; 
+    font-weight: 900; 
+    color: transparent;
+    background-image: $linear_titre;
+    background-clip: text; 
+    -webkit-background-clip: text; 
+}
+
+.trendyChallenges 
+{
+    width: 65%;  
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    &__bloc
+    {
+        min-height: 100%; 
+        width: 48%; 
+        border-radius: 20px; 
+        padding: 20px 20px; 
+        background-color: $transparent_bg;
+        transition: all 0.5s;  
+        cursor: pointer;
+        &__info
+        {
+            width: fit-content; 
+            height: 34px; 
+            display: flex;
+            align-items: center; 
+            text-align: center;
+            margin-bottom: 20px;   
+            .infoType
+            { 
+                display: flex;
+                align-items: center; 
+                margin-right: 20px; 
+                height: 100%;  
+                width: 45%;    
+                background-color: rgba($color: #000000, $alpha: 0.2); 
+                border-radius: 30px; 
+                img
+                {
+                    border-radius: 50%;
+                    max-width: 20%;
+                    height: auto;
+                }
+                h4
+                {
+                    margin-left: 15px;
+                    font-weight: 300; 
+                    font-size: 1vw; 
+                }
+            }
+            .infoXP
+            { 
+                width: 15%;      
+                height: 100%;  
+                border-radius: 20px; 
+                background: linear-gradient(to right, #30204e, #1a3850) padding-box, $linear_titre border-box;
+                border: 2px solid transparent;
+                display: flex;
+                align-items: center;
+                p
+                {
+                    height: fit-content; 
+                    font-weight: 700;
+                    font-size: 12px;
+                    margin: auto;
+                } 
+            }
+        }
+        .bloc__div__flex
         {
             display: flex;
             align-items: center;
-            height: 100%; 
-            width: fit-content; 
-
-            font-size: 18px;
-            font-weight: 800; 
-
-            border-radius: 15px; 
-            background-color: rgba(255,255,255,0.2);
-            margin-right: 30px; 
-            padding: 5px 5px 5px 20px;  
-            .reward_img
-            {
-                height: 5vw;
-                margin-left: 20px;
-            }
         }
-        &__right
+        &__left
         {
-            font-size: 12px; 
-            font-weight: 500; 
-            width: 40%;
-            height: 100%;
-        }
-    }
-    &__trendyChallenges_title
-    {
-        width: 80%;
-        display: flex;
-        height: fit-content;
-        margin: 40px 0 30px 0; 
-    }
-    &__trendyChallenges
-    {
-        width: 80%;
-        height: fit-content;
-        display: flex;
-        justify-content: space-between; 
-        &__bloc
-        {
-            height: fit-content;
-            width: 45%;
-            border-radius: 30px;
-            padding: 20px 20px; 
-            background-color: rgba(255,255,255,0.2);
-            transition: all 0.5s;  
-            cursor: pointer;
-            .challenge_type
+            width: 55%;
+            &__title
             {
-                width: 20%;
-                height: fit-content;
-                background-color: rgba(255,255,255,0.2);
-                padding: 5px;
-                margin: 5px 0 30px 0; 
-                border-radius: 10px; 
-                text-align: center;
-                font-size: 1vw; 
-            }
-            .challenge_title
-            {
-                margin: 20px 0 10px 0;
+                padding-top: 15px;  
                 font-size: 16px;
             }
-            .challenge_description
+            &__description 
             {
+                margin-top: 15px; 
+                position: relative;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 p
                 {
-                    max-width: 60%;
+                    max-width: 90%;
+                    font-size: 12px;
+                    font-weight: 300; 
                 }
             }
-            &:hover
-            {
-                transform: scale(115%);
-            }
-        }
-    }
-    &__div
-    {
-        margin: 60px 0; 
-        width: 100%;
-        height: 300px;
-        h4
-        {
-            font-size: 16px;
-            width: 100%;
-            height: auto;
-            text-align: center;
-            margin: 20px 0;
-        }
-        p
-        {
-            width: 100%;
-            text-align: center; 
-        }
-    }
-    &__nav
-    {
-        width: 40%;
-        height: fit-content;
-        margin: 10px 0 60px 0; 
-        position: relative;
-        display: flex;
-        &__bloc
-        {
-            height: fit-content;
-            width: 33.3%;
-            padding: 5px 15px;
-            font-size: 2vw;      
-            h5
-            { 
-                width: 100%;
-                text-align: center; 
-            }
-        }
-        &__selection
-        {
-            width: 25%;
-            height: 1px;
-            background-color: $bordure;
-            position: absolute;
-            bottom: 0px;
-            left: 71.2%;       
-        }
-    }
-    &__account
-    {
-        width: 40%;
-        height: fit-content;
-        margin-top: 30px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgba(255,255,255,0.2); 
-        border-radius: 30px; 
-        margin-bottom: 50px;
-        img
-        {
-            width: 15%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .wallet
-        {
-            color: #71c9d7;
-            margin-bottom: 20px;
-        }
-        &__info
-        {
-            width: fit-content;
-            display: flex;
-            align-items: center; 
-            margin-bottom: 30px;
-            h6
-            {
-                font-size: 1vw;
-                margin-right: 15px;
-            }
-            p
-            {
-                font-size: 0.5vw;
-            }
-        }
-        &__social
+        } 
+        &__right 
         {
             display: flex;
-            width: fit-content; 
-            height: fit-content;
-            .media
-            {
-                width: fit-content;
-                height: fit-content;
-                padding: 3px;
-                font-size: 1vw;
-                background-color: rgba(255,255,255,0.2);
-                border-radius: 3px;  
-                transition: all 0.5s; 
-                &:hover
-                {
-                    transform: scale(115%);
-                    cursor: pointer;
-                }
-            }
-            .media1
-            {
-                margin-right: 30px; 
-            }
-        }
-    }
-    &__rewardBloc
-    {
-        width: 80%;
-        height: fit-content;
-        padding: 20px 80px; 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgba(255,255,255,0.2); 
-        margin: 50px 0;
-        border-radius: 25px;
-        transition: all 0.3s; 
-        &__level
-        {
-            h4
-            {
-                font-size: 1.2vw;
-                margin-bottom: 10px;
-            }
-            p
-            {
-                font-size: 0.6vw;
-            }
-        }
-        &__info
-        {
-            display: flex;
-            flex-direction: column;
+            width: 45%; 
             align-items: center;
-            max-width: 40%; 
-            text-align: center;
-            .title
-            {
-                font-size: 1vw;
-                margin-bottom: 10px;
-            }
-            p
-            {
-                font-size: 0.6vw;
-            } 
-        }
-        &__img
-        {
-            height: 4vw;
-            width: 4vw;
-            position: relative;
+            justify-content: center;
             img
             {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                height: 9vw;  
+                width: 70%;
             }
         }
         &:hover
         {
-            cursor: pointer;
-            background-color: rgba(255,255,255,0.25); 
+            transform: scale(115%);
         }
+    }
+}
+
+.main__div
+{
+    margin: 60px 0; 
+    width: 100%;
+    height: 300px;
+    h4
+    {
+        font-size: 16px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 20px 0;
+    }
+    p
+    {
+        width: 100%;
+        text-align: center; 
+    }
+}
+
+.nav
+{
+    width: 40%;
+    height: fit-content;
+    margin: 10px 0 60px 0; 
+    position: relative;
+    display: flex;
+    &__bloc
+    {
+        height: fit-content;
+        width: 33.33%;
+        padding: 5px 15px;
+        font-size: 1.8vw;       
+        h5
+        { 
+            width: 100%;
+            text-align: center; 
+        } 
+    }
+    &__selection
+    {
+        width: 20%;   
+        height: 2px; 
+        background-image: $linear_titre; 
+        position: absolute;
+        bottom: 0px;
+        left: 83%;       
+        transform: translate(-50%,-50%);        
+    }
+}
+
+.carroussel
+{
+    overflow: hidden;
+}
+
+.account
+{
+    width: 50%;  
+    height: fit-content;
+    margin: 30px auto; 
+    padding: 15px 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background: linear-gradient(to right, #30204e, #1a3850) padding-box, $linear_titre border-box;
+    border: 4px solid transparent;  
+    border-radius: 30px;
+    margin-bottom: 50px;
+    img
+    {
+        width: 30%; 
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 25px;  
+    }
+    .username
+    {
+        font-size: 1.6vw; 
+
+    }
+    .wallet
+    {
+        font-weight: 300; 
+        margin-bottom: 10px;
+    }
+    &__social
+    {
+        display: flex;
+        width: 12%; 
+        height: fit-content;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        img
+        {
+            width: 40%;  
+        }
+    }
+    &__info
+    {
+        width: 100%; 
+        display: flex;
+        align-items: center; 
+        justify-content: space-between;
+        margin-bottom: 30px;
+        h6
+        {
+            font-size: 2vw; 
+        }
+        p
+        {
+            font-size: 1.4vw;  
+            font-weight: 300; 
+        }
+    }
+    &__barreXP
+    {
+        height: 8px;   
+        width: 100%;
+        border-radius: 5px;
+        background-image: $linear_titre;
+        position: relative;
+        &_point
+        {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $bordure;
+            position: absolute;
+            transform: translate(-50%,-30%);   
+
+        }
+    }
+}
+
+.reward__title
+{
+    width: fit-content;
+    margin: 30px auto; 
+    font-size: 2vw;
+    color: transparent;
+    background-image: $linear_titre;
+    background-clip: text; 
+    -webkit-background-clip: text;
+}
+
+.rewardBloc
+{
+    width: 80%;
+    height: fit-content;
+    padding: 40px 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.08); 
+    margin: 15px auto; 
+    border-radius: 25px;
+    transition: all 0.3s; 
+    &__level
+    {
+        height: 10vw;
+        width: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: linear-gradient(to right, #222d48, #222d48) padding-box, $linear_titre border-box;
+        border: 8px solid transparent;
+        &__info
+        {
+            text-align: center;
+        }
+        h4
+        {
+            font-size: 1.8vw;
+            margin-bottom: 5px;
+        }
+        p
+        {
+            font-size: 1.2vw;
+        }
+    }
+    &__info
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 60%; 
+        text-align: center;
+        .title
+        {
+            font-size: 1.8vw;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+        p
+        {
+            font-size: 1.6vw; 
+            font-weight: 300; 
+        } 
+    }
+    img
+    {
+        width: 20%;
+        height: auto;
+        border-radius: 25px;
+    }
+    &:hover
+    {
+        cursor: pointer;
+        background-color: rgba(255,255,255,0.14); 
     }
 }
 
@@ -498,14 +603,40 @@ $linear_btn_footer2: #2b3546;
         width: 34%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; 
         &__btn
         {
-            width: 100%;
-            height: 40px;
-            font-size: 20px;   
+            height: 100px; 
+            width: 350px; 
+            border-radius: 55px;   
+            border: 5px solid transparent;
+            background: linear-gradient(to right, #06122f, #0a0e2d) padding-box, $linear_titre border-box;
+            font-size: 28px; 
+            color: $baseTxt; 
             font-weight: 900; 
             margin-bottom: 30px;    
+        }
+        &__nav
+        {
+            display: flex;
+            width: fit-content;
+            margin-bottom: 30px;
+            .footer__lien
+            {
+                margin-top: 15px;
+                text-decoration: none;
+                margin-right: 20px;
+                color: #a7a9ac; 
+                font-style: italic;
+                &:hover
+                {
+                    color: $baseTxt;
+                }  
+            }
+            .last
+            {
+                margin-right: 0px;
+            }
         }
         &__logos
         {
@@ -568,4 +699,4 @@ $linear_btn_footer2: #2b3546;
             }
         }
     }
-}
+} 
