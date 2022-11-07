@@ -127,22 +127,22 @@
 
 .infoBloc {
   position: relative;
-  padding: 10px 20px;
+  padding: 5px 15px;
   border-radius: 30px;
   width: 40%;
   height: fit-content;
-  margin: 110px auto 60px auto;
+  margin: 150px auto 60px auto;
   background: linear-gradient(to right, #30204e, #1a3850) padding-box, linear-gradient(to right, #be49df, #43d4af) border-box;
   border: 5px solid transparent;
 }
 .infoBloc h2 {
   margin-bottom: 5px;
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   font-weight: 900;
 }
 .infoBloc h3 {
   margin-bottom: 10px;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
   font-style: italic;
   font-weight: 100;
 }
@@ -387,7 +387,7 @@
 .rewardBloc {
   width: 80%;
   height: fit-content;
-  padding: 40px 80px;
+  padding: 20px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -424,16 +424,16 @@
   text-align: center;
 }
 .rewardBloc__info .title {
-  font-size: 1.8vw;
+  font-size: 24px;
   font-weight: 900;
   margin-bottom: 10px;
 }
 .rewardBloc__info p {
-  font-size: 1.6vw;
+  font-size: 12px;
   font-weight: 300;
 }
 .rewardBloc img {
-  width: 20%;
+  width: 15%;
   height: auto;
   border-radius: 25px;
 }
