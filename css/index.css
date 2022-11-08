@@ -635,12 +635,6 @@
 .h1 h1 {
   position: relative;
   left: -250px;
-  -moz-transform: translateX(-120%);
-  -webkit-transform: translateX(-120%);
-  transform: translateX(-120%);
-  -moz-animation: my-animation 7s linear infinite;
-  -webkit-animation: my-animation 7s linear infinite;
-  animation: my-animation 7s linear infinite;
 }
 
 /* for Firefox */
