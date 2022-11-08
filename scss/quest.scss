@@ -351,6 +351,10 @@ $linear_btn_footer2: #2b3546;
             width: 100%;
             text-align: center; 
         } 
+        &:hover
+        {
+            cursor: pointer;
+        }
     }
     &__selection
     {
@@ -360,13 +364,135 @@ $linear_btn_footer2: #2b3546;
         position: absolute;
         bottom: 0px;
         left: 83%;       
-        transform: translate(-50%,-50%);        
+        transform: translate(-50%,-50%);
+        transition: all 1s ease-out;        
     }
 }
 
 .carroussel
 {
     overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    &__section
+    {
+        min-width: 100%;
+        width: 100%; 
+        position: relative;
+        left: 0px;
+        transition: all 1s ease-out;  
+    }
+}
+
+.available
+{
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    padding: 2.5% 2.5%;
+    &__bloc
+    {
+        height: 200px; 
+        width: 49%; 
+        border-radius: 20px; 
+        padding: 20px 20px; 
+        background-color: $transparent_bg;
+        transition: all 0.5s;
+        margin-bottom: 15px;  
+        cursor: pointer;
+        &__info
+        {
+            width: fit-content; 
+            height: 34px; 
+            display: flex;
+            align-items: center; 
+            text-align: center;
+            margin-bottom: 20px;   
+            .infoType
+            { 
+                display: flex;
+                align-items: center; 
+                margin-right: 20px; 
+                height: 100%;  
+                width: 45%;    
+                background-color: rgba($color: #000000, $alpha: 0.2); 
+                border-radius: 30px; 
+                img
+                {
+                    border-radius: 50%;
+                    max-width: 20%;
+                    height: auto;
+                }
+                h4
+                {
+                    margin-left: 15px;
+                    font-weight: 300; 
+                    font-size: 1vw; 
+                }
+            }
+            .infoXP
+            { 
+                width: 15%;      
+                height: 100%;  
+                border-radius: 20px; 
+                background: linear-gradient(to right, #30204e, #1a3850) padding-box, $linear_titre border-box;
+                border: 2px solid transparent;
+                display: flex;
+                align-items: center;
+                p
+                {
+                    height: fit-content; 
+                    font-weight: 700;
+                    font-size: 12px;
+                    margin: auto;
+                } 
+            }
+        }
+        .bloc__div__flex
+        {
+            display: flex;
+            align-items: center;
+        }
+        &__left
+        {
+            width: 55%;
+            &__title
+            {
+                padding-top: 15px;  
+                font-size: 16px;
+            }
+            &__description 
+            {
+                margin-top: 15px; 
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p
+                {
+                    max-width: 90%;
+                    font-size: 12px;
+                    font-weight: 300; 
+                }
+            }
+        } 
+        &__right 
+        {
+            display: flex;
+            width: 45%; 
+            align-items: center;
+            justify-content: center;
+            img
+            {
+                width: 70%;
+            }
+        }
+        &:hover
+        {
+            transform: scale(105%);
+        }
+    }
 }
 
 .account

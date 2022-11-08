@@ -96,19 +96,194 @@
         <p>Partie à travailler</p>
     </div>
     <nav class="nav">
-        <div id="available" class="nav__bloc"><h5>Available</h5></div>
-        <div id="completed" class="nav__bloc"><h5>Completed</h5></div>
-        <div id="levels" class="nav__bloc"><h5>Levels</h5></div>
-        <div class="nav__selection"></div>
+        <div class="nav__bloc" onclick="transitionAvailable()"><h5>Available</h5></div>
+        <div class="nav__bloc" onclick="transitionCompleted()"><h5>Completed</h5></div>
+        <div class="nav__bloc" onclick="transitionLevels()"><h5>Levels</h5></div>
+        <div class="nav__selection" id="carroussel_selection"></div>
     </nav>
     <main class="carroussel">
-        <section class="carroussel__section">
-            
+        <section class="carroussel__section available" id="available">
+            <div class="available__bloc">
+                <div class="available__bloc__info">
+                    <div class="infoType">
+                        <img src="./img/artSense_logo_noir.png" alt="logo ArtSense">
+                        <h4>ArtSense</h4>
+                    </div>
+                    <div class="infoXP">
+                        <p>500 xp</p>
+                    </div>
+                </div>
+                <div class="bloc__div__flex">
+                    <div class="available__bloc__left">
+                        <h4 class="available__bloc__left__title">Connect with ArtSense</h4>
+                        <div class="available__bloc__left__description">
+                            <p>Interact with ArtSense and discover the foundations of the project</p>
+                        </div>
+                    </div>
+                    <div class="available__bloc__right">
+                        <img src="./imgQuest/artSense3dDesign.png" alt="artSense design 3D">
+                    </div>
+                </div>
+            </div>
+            <div class="available__bloc">
+                <div class="available__bloc__info">
+                    <div class="infoType">
+                        <img src="./imgQuest/speedy_logo.png" alt="logo speedy">
+                        <h4>ArtSense</h4>
+                    </div>
+                    <div class="infoXP">
+                        <p>500 xp</p>
+                    </div>
+                </div>
+                <div class="bloc__div__flex">
+                    <div class="available__bloc__left">
+                        <h4 class="available__bloc__left__title">Discover his artistic world</h4>
+                        <div class="available__bloc__left__description">
+                            <p>Enjoy speedy's work and biography by discovering his exhibitions around the world</p>
+                        </div>
+                    </div>
+                    <div class="available__bloc__right">
+                        <img src="./imgQuest/speedy3dDesign.png" alt="speedy design 3D">
+                    </div>
+                </div>
+            </div>
+            <div class="available__bloc">
+                <div class="available__bloc__info">
+                    <div class="infoType">
+                        <img src="./img/artSense_logo_noir.png" alt="logo ArtSense">
+                        <h4>ArtSense</h4>
+                    </div>
+                    <div class="infoXP">
+                        <p>500 xp</p>
+                    </div>
+                </div>
+                <div class="bloc__div__flex">
+                    <div class="available__bloc__left">
+                        <h4 class="available__bloc__left__title">Connect with ArtSense</h4>
+                        <div class="available__bloc__left__description">
+                            <p>Interact with ArtSense and discover the foundations of the project</p>
+                        </div>
+                    </div>
+                    <div class="available__bloc__right">
+                        <img src="./imgQuest/artSense3dDesign.png" alt="artSense design 3D">
+                    </div>
+                </div>
+            </div>
+            <div class="available__bloc">
+                <div class="available__bloc__info">
+                    <div class="infoType">
+                        <img src="./imgQuest/speedy_logo.png" alt="logo speedy">
+                        <h4>ArtSense</h4>
+                    </div>
+                    <div class="infoXP">
+                        <p>500 xp</p>
+                    </div>
+                </div>
+                <div class="bloc__div__flex">
+                    <div class="available__bloc__left">
+                        <h4 class="available__bloc__left__title">Discover his artistic world</h4>
+                        <div class="available__bloc__left__description">
+                            <p>Enjoy speedy's work and biography by discovering his exhibitions around the world</p>
+                        </div>
+                    </div>
+                    <div class="available__bloc__right">
+                        <img src="./imgQuest/speedy3dDesign.png" alt="speedy design 3D">
+                    </div>
+                </div>
+            </div>
+            <div class="available__bloc">
+                <div class="available__bloc__info">
+                    <div class="infoType">
+                        <img src="./img/artSense_logo_noir.png" alt="logo ArtSense">
+                        <h4>ArtSense</h4>
+                    </div>
+                    <div class="infoXP">
+                        <p>500 xp</p>
+                    </div>
+                </div>
+                <div class="bloc__div__flex">
+                    <div class="available__bloc__left">
+                        <h4 class="available__bloc__left__title">Connect with ArtSense</h4>
+                        <div class="available__bloc__left__description">
+                            <p>Interact with ArtSense and discover the foundations of the project</p>
+                        </div>
+                    </div>
+                    <div class="available__bloc__right">
+                        <img src="./imgQuest/artSense3dDesign.png" alt="artSense design 3D">
+                    </div>
+                </div>
+            </div>
+            <div class="available__bloc">
+                <div class="available__bloc__info">
+                    <div class="infoType">
+                        <img src="./imgQuest/speedy_logo.png" alt="logo speedy">
+                        <h4>ArtSense</h4>
+                    </div>
+                    <div class="infoXP">
+                        <p>500 xp</p>
+                    </div>
+                </div>
+                <div class="bloc__div__flex">
+                    <div class="available__bloc__left">
+                        <h4 class="available__bloc__left__title">Discover his artistic world</h4>
+                        <div class="available__bloc__left__description">
+                            <p>Enjoy speedy's work and biography by discovering his exhibitions around the world</p>
+                        </div>
+                    </div>
+                    <div class="available__bloc__right">
+                        <img src="./imgQuest/speedy3dDesign.png" alt="speedy design 3D">
+                    </div>
+                </div>
+            </div>
+            <div class="available__bloc">
+                <div class="available__bloc__info">
+                    <div class="infoType">
+                        <img src="./img/artSense_logo_noir.png" alt="logo ArtSense">
+                        <h4>ArtSense</h4>
+                    </div>
+                    <div class="infoXP">
+                        <p>500 xp</p>
+                    </div>
+                </div>
+                <div class="bloc__div__flex">
+                    <div class="available__bloc__left">
+                        <h4 class="available__bloc__left__title">Connect with ArtSense</h4>
+                        <div class="available__bloc__left__description">
+                            <p>Interact with ArtSense and discover the foundations of the project</p>
+                        </div>
+                    </div>
+                    <div class="available__bloc__right">
+                        <img src="./imgQuest/artSense3dDesign.png" alt="artSense design 3D">
+                    </div>
+                </div>
+            </div>
+            <div class="available__bloc">
+                <div class="available__bloc__info">
+                    <div class="infoType">
+                        <img src="./imgQuest/speedy_logo.png" alt="logo speedy">
+                        <h4>ArtSense</h4>
+                    </div>
+                    <div class="infoXP">
+                        <p>500 xp</p>
+                    </div>
+                </div>
+                <div class="bloc__div__flex">
+                    <div class="available__bloc__left">
+                        <h4 class="available__bloc__left__title">Discover his artistic world</h4>
+                        <div class="available__bloc__left__description">
+                            <p>Enjoy speedy's work and biography by discovering his exhibitions around the world</p>
+                        </div>
+                    </div>
+                    <div class="available__bloc__right">
+                        <img src="./imgQuest/speedy3dDesign.png" alt="speedy design 3D">
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="carroussel__section">
+        <section class="carroussel__section" id="completed">
 
         </section>
-        <section class="carroussel__section">
+        <section class="carroussel__section" id="levels">
             <div class="account">
                 <img src="./img/144.png" alt="account img">
                 <h4 class="username">USERNAME</h4>
@@ -123,11 +298,8 @@
                 </div>
                 <div class="account__barreXP"><div class="account__barreXP_point"></div></div>
             </div>
-        </section>
-    </main>
-        <div class="reward__title"><h4>Rewards</h4></div>
-        <div class="title_sep"></div>
-
+            <div class="reward__title"><h4>Rewards</h4></div>
+            <div class="title_sep"></div>
             <div class="rewardBloc">
                 <div class="rewardBloc__level">
                     <div class="rewardBloc__level__info">
@@ -155,6 +327,8 @@
                 </div>
                 <img src="./img/75.png" alt="">
             </div>
+        </section>
+    </main>
 
     <section class="h1">
         <h1>ARTSENSE INN</h1>
@@ -169,6 +343,12 @@
         </div>
         <div class="footer__center">
             <button class="footer__center__btn btn_bg"><h5>ARTIST INCUBATOR APPLICATION</h5></button>
+            <div class="footer__center__nav">
+                <a class="footer__lien" href="./gallery.html">Gallery</a>
+                <a class="footer__lien" href="#">DAO</a>
+                <a class="footer__lien" href="./quest.html">Quest</a>
+                <a class="footer__lien last" href="#">Others</a>
+            </div>
             <div class="footer__center__logos">
                 <img src="./img/twitter_logo.png" alt="logo twitter">
                 <img src="./img/discord_logo.png" alt="logo discord">
@@ -181,6 +361,7 @@
                 <div class="contactEmail"><p>contact@artsense.fr</p></div>
             </div>
         </div>
+        <script src="./js/quest.js"></script>
     </footer>
 </body>
 </html>
