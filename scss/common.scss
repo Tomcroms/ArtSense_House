@@ -172,6 +172,7 @@ $linear_btn_footer2: #2b3546;
     width: 100%;
     display: flex;
     align-items: flex-end;
+    margin-top: 200px;
     margin-bottom: 15px;
     &__left
     {
@@ -227,18 +228,6 @@ $linear_btn_footer2: #2b3546;
         display: flex;
         flex-direction: column;
         align-items: center; 
-        &__btn
-        {
-            height: 70px; 
-            width: 250px; 
-            border-radius: 55px;   
-            border: 5px solid transparent;
-            background: linear-gradient(to right, #06122f, #0a0e2d) padding-box, $linear_titre border-box;
-            font-size: 18px; 
-            color: $baseTxt; 
-            font-weight: 900; 
-            margin-bottom: 30px;    
-        }
         &__nav
         {
             display: flex;

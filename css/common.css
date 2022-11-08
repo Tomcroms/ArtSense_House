@@ -140,6 +140,7 @@
   width: 100%;
   display: flex;
   align-items: flex-end;
+  margin-top: 200px;
   margin-bottom: 15px;
 }
 .footer__left {
@@ -189,17 +190,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.footer__center__btn {
-  height: 70px;
-  width: 250px;
-  border-radius: 55px;
-  border: 5px solid transparent;
-  background: linear-gradient(to right, #06122f, #0a0e2d) padding-box, linear-gradient(to right, #8763dd, #43d5ae) border-box;
-  font-size: 18px;
-  color: #f3f3f4;
-  font-weight: 900;
-  margin-bottom: 30px;
 }
 .footer__center__nav {
   display: flex;

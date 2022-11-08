@@ -303,7 +303,7 @@
   background-image: linear-gradient(to right, #be49df, #43d4af);
   position: absolute;
   bottom: 0px;
-  left: 83%;
+  left: 16.66%;
   transform: translate(-50%, -50%);
   transition: all 1s ease-out;
 }
@@ -417,10 +417,10 @@
 }
 
 .account {
-  width: 50%;
+  width: 35%;
   height: fit-content;
   margin: 30px auto;
-  padding: 15px 30px;
+  padding: 25px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -436,7 +436,7 @@
   border-radius: 25px;
 }
 .account .username {
-  font-size: 1.6vw;
+  font-size: 1.2vw;
 }
 .account .wallet {
   font-weight: 300;
@@ -460,10 +460,10 @@
   margin-bottom: 30px;
 }
 .account__info h6 {
-  font-size: 2vw;
+  font-size: 1.2vw;
 }
 .account__info p {
-  font-size: 1.4vw;
+  font-size: 1vw;
   font-weight: 300;
 }
 .account__barreXP {
@@ -518,11 +518,11 @@
   text-align: center;
 }
 .rewardBloc__level h4 {
-  font-size: 1.8vw;
+  font-size: 1.4vw;
   margin-bottom: 5px;
 }
 .rewardBloc__level p {
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 .rewardBloc__info {
   display: flex;
@@ -550,25 +550,11 @@
   background-color: rgba(255, 255, 255, 0.14);
 }
 
-.h1 {
-  margin-top: 150px;
-  margin-bottom: 130px;
-  white-space: nowrap;
-  text-align: center;
-  font-size: 160px;
-  font-weight: 900;
-  width: 100%;
-  overflow: hidden;
-}
-.h1 h1 {
-  position: relative;
-  left: -250px;
-}
-
 .footer {
   width: 100%;
   display: flex;
   align-items: flex-end;
+  margin-top: 150px;
   margin-bottom: 15px;
 }
 .footer__left {
