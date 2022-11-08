@@ -125,7 +125,7 @@ $linear_titre: linear-gradient(to right, #8763dd , #43d5ae);
 }
 .verticalDivBottom
 {
-    height: 100px;
+    height: 140px;
     border: 1px dashed white;
 }
 
@@ -234,7 +234,7 @@ $linear_titre: linear-gradient(to right, #8763dd , #43d5ae);
     &__btn
     { 
         width: 40%;
-        font-size: 1.4vw;
+        font-size: 1.4vw; 
         display: flex;
         align-items: center;
         padding: 20px 35px;

@@ -782,33 +782,8 @@ $linear_btn_footer2: #2b3546;
     {
         position: relative;
         left: -250px; 
-    }
-  }
-  
-  /* for Firefox */
-  @-moz-keyframes my-animation {
-    from { -moz-transform: translateX(-120%); }
-    to { -moz-transform: translateX(120%); }
-  }
-  
-  /* for Chrome */
-  @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(-120%); }
-    to { -webkit-transform: translateX(120%); }
-  }
-  
-  @keyframes my-animation {
-    from {
-      -moz-transform: translateX(-120%);
-      -webkit-transform: translateX(-120%);
-      transform: translateX(-120%); 
-    }
-    to {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-  }
+    }  
+}
 
 .footer
 {

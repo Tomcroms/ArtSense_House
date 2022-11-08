@@ -140,12 +140,13 @@ $linear_btn_footer2: #2b3546;
             {
                 margin-top: 15px;
                 text-decoration: none;
-                margin-right: 40px;
-                color: #a7a9ac; 
+                margin-right: 40px; 
+                color: $baseTxt;
+                font-weight: 500;
                 font-style: italic;
                 &:hover
                 {
-                    color: $baseTxt;
+                    font-weight: 800;
                 }  
             }
         }
@@ -228,12 +229,12 @@ $linear_btn_footer2: #2b3546;
         align-items: center; 
         &__btn
         {
-            height: 100px; 
-            width: 350px; 
+            height: 70px; 
+            width: 250px; 
             border-radius: 55px;   
             border: 5px solid transparent;
             background: linear-gradient(to right, #06122f, #0a0e2d) padding-box, $linear_titre border-box;
-            font-size: 28px; 
+            font-size: 18px; 
             color: $baseTxt; 
             font-weight: 900; 
             margin-bottom: 30px;    
