@@ -69,98 +69,6 @@ $linear_btn_footer2: #2b3546;
     margin-bottom: 50px; 
 }
 
-.header
-{
-    display: flex;
-    padding-top: 20px;  
-    height: 80px;
-    width: 100%; 
-    &__logo
-    {
-        height: 50px; 
-        width: auto; 
-        margin: 7px 50px 0 63px;  
-    }
-    &__center
-    {
-        display: flex;
-        position: relative; 
-        width: calc(100% - 358px);
-        &__center1
-        {
-            display: flex;
-            position: relative;
-            margin-right: auto; 
-            .center1__recherche
-            {
-                display: flex;
-                align-items: center; 
-                justify-content: space-between;
-                height: 45px;
-                max-width: 90px;
-                border-radius: 30px;
-                background-color: none;
-                border: solid $bordure 1px;
-                margin-top: 2.5px;
-                margin-right: 40px;
-                img 
-                {
-                    margin-top: 2px; 
-                    margin-left: 8px; 
-                    height: 50%; 
-                }
-                input
-                {
-                    max-width: 60%;
-                    height: 100%; 
-                    background: none;
-                    border: none;
-                    color: $baseTxt;
-                    border-radius: 0 30px 30px 0;
-                }
-            }
-            .center1__boutonArtist
-            {
-                height: 40px;
-                width: 170px;
-                min-width: 130px;
-                margin-top: 5px; 
-                cursor: not-allowed;
-            }
-        }
-        
-        &__center2
-        {
-            display: flex;
-            .center2__lien
-            {
-                margin-top: 15px;
-                text-decoration: none;
-                margin-right: 40px;
-                color: #a7a9ac; 
-                font-style: italic;
-                &:hover
-                {
-                    color: $baseTxt;
-                }  
-            }
-        }
-        .separation1
-        {
-            width: 100%;
-            position: absolute;
-            bottom: 0px;
-            margin-bottom: 0;  
-        }
-    }
-    &__boutonSign
-    {
-        height: 50px;
-        width: 120px; 
-        min-width: 80px;
-        margin-right: 25px; 
-    }
-}
 
 .accueil
 {
@@ -170,6 +78,13 @@ $linear_btn_footer2: #2b3546;
     display: flex;
     position: relative;
     overflow: hidden;
+    .video_container
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
     &__bloc
     {
         border-radius: 54px;
@@ -458,6 +373,7 @@ $linear_btn_footer2: #2b3546;
     {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         width: 90%; 
         margin: 0 auto;
         border-style: solid none solid none;
@@ -514,11 +430,13 @@ $linear_btn_footer2: #2b3546;
         {
             display: flex;
             align-items: center;
+            justify-content: flex-end;
             height: fit-content;
             img
             {
+                width: 8%;
                 border-radius: 50%;
-                margin-left: 5px;
+                margin-left: 5px; 
             }
             .div_sep
             {
@@ -847,12 +765,12 @@ $linear_btn_footer2: #2b3546;
         align-items: center; 
         &__btn
         {
-            height: 100px; 
-            width: 350px; 
+            height: 70px; 
+            width: 250px;  
             border-radius: 55px;   
             border: 5px solid transparent;
             background: linear-gradient(to right, #06122f, #0a0e2d) padding-box, $linear_titre border-box;
-            font-size: 28px; 
+            font-size: 20px; 
             color: $baseTxt; 
             font-weight: 900; 
             margin-bottom: 30px;    

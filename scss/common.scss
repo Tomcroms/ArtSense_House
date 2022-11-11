@@ -90,6 +90,7 @@ $linear_btn_footer2: #2b3546;
         display: flex;
         position: relative; 
         width: calc(100% - 358px);
+        margin-right: 40px;
         &__center1
         {
             display: flex;
@@ -144,6 +145,10 @@ $linear_btn_footer2: #2b3546;
                 color: $baseTxt;
                 font-weight: 500;
                 font-style: italic;
+                &__last
+                {
+                    margin-right: 0px;
+                }
                 &:hover
                 {
                     font-weight: 800;
@@ -172,7 +177,7 @@ $linear_btn_footer2: #2b3546;
     width: 100%;
     display: flex;
     align-items: flex-end;
-    margin-top: 200px;
+    margin-top: 200px; 
     margin-bottom: 15px;
     &__left
     {

@@ -71,6 +71,7 @@
   display: flex;
   position: relative;
   width: calc(100% - 358px);
+  margin-right: 40px;
 }
 .header__center__center1 {
   display: flex;
@@ -119,6 +120,9 @@
   color: #f3f3f4;
   font-weight: 500;
   font-style: italic;
+}
+.header__center__center2 .center2__lien__last {
+  margin-right: 0px;
 }
 .header__center__center2 .center2__lien:hover {
   font-weight: 800;
