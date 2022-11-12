@@ -16,7 +16,7 @@ gsap.to(".services__main__left__1",{
         trigger: ".services",
         start: "100px bottom",
         end: "-100px top",  
-        scrub: 1,  
+        scrub: true,  
         toggleActions: "restart pause reverse pause"
     },
     translateX: "100%",
@@ -27,7 +27,7 @@ gsap.to(".services__main__left__2",{
         trigger: ".services",
         start: "200px bottom",
         end: "-50px top",  
-        scrub: 1, 
+        scrub: true, 
         toggleActions: "restart pause reverse pause"
     },
     translateX: "100%",
@@ -38,7 +38,7 @@ gsap.to(".services__main__left__3",{
         trigger: ".services",
         start: "300px bottom",
         end: "0px top",  
-        scrub: 1, 
+        scrub: true, 
         toggleActions: "restart pause reverse pause"
     },
     translateX: "100%",
@@ -49,7 +49,7 @@ gsap.to(".services__main__left__4",{
         trigger: ".services",
         start: "400px bottom",
         end: "50px top", 
-        scrub: 1, 
+        scrub: true, 
         toggleActions: "restart pause reverse pause"
     },
     translateX: "100%",
@@ -61,7 +61,7 @@ gsap.to(".services__main__right__1",{
         trigger: ".services",
         start: "100px bottom",
         end: "-100px top",  
-        scrub: 1,  
+        scrub: true,  
         toggleActions: "restart pause reverse pause"
     },
     translateX: "-100%",
@@ -72,7 +72,7 @@ gsap.to(".services__main__right__2",{
         trigger: ".services",
         start: "200px bottom",
         end: "-50px top",  
-        scrub: 1, 
+        scrub: true, 
         toggleActions: "restart pause reverse pause"
     },
     translateX: "-100%",
@@ -83,7 +83,7 @@ gsap.to(".services__main__right__3",{
         trigger: ".services",
         start: "300px bottom",
         end: "0px top",  
-        scrub: 1, 
+        scrub: true, 
         toggleActions: "restart pause reverse pause"
     },
     translateX: "-100%",
@@ -94,7 +94,7 @@ gsap.to(".services__main__right__4",{
         trigger: ".services",
         start: "400px bottom",
         end: "50px top",   
-        scrub: 1, 
+        scrub: true, 
         toggleActions: "restart pause reverse pause"
     }, 
     translateX: "-100%",

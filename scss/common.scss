@@ -8,7 +8,7 @@
 ::-webkit-scrollbar-track {
     border: none;
     background-image: url("../img/bg_scroll.png"); 
-    background-size: cover;
+    background-size: cover; 
 }
 
 ::-webkit-scrollbar-thumb
@@ -178,7 +178,7 @@ $linear_btn_footer2: #2b3546;
     width: 100%;
     display: flex;
     align-items: flex-end;
-    margin-top: 150px;
+    margin-top: 75px; 
     margin-bottom: 15px;
     &__left
     {
@@ -243,9 +243,8 @@ $linear_btn_footer2: #2b3546;
             {
                 margin-top: 15px;
                 text-decoration: none;
-                margin-right: 20px;
-                color: #a7a9ac; 
-                font-style: italic;
+                margin-right: 20px; 
+                font-weight: 500; 
                 &:hover
                 {
                     color: $baseTxt;
