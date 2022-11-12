@@ -144,7 +144,6 @@
   width: 100%;
   display: flex;
   align-items: flex-end;
-  margin-top: 75px;
   margin-bottom: 15px;
 }
 .footer__left {
@@ -205,6 +204,7 @@
   text-decoration: none;
   margin-right: 20px;
   font-weight: 500;
+  color: #f3f3f4;
 }
 .footer__center__nav .footer__lien:hover {
   color: #f3f3f4;
