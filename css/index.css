@@ -647,8 +647,8 @@ h3 {
   margin-top: 15px;
   text-decoration: none;
   margin-right: 20px;
-  color: #a7a9ac;
-  font-style: italic;
+  font-weight: 500;
+  color: #f3f3f4;
 }
 .footer__center__nav .footer__lien:hover {
   color: #f3f3f4;

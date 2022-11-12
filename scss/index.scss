@@ -696,7 +696,7 @@ $linear_btn_footer2: #2b3546;
 
 .h1
 {
-    margin-top: 100px;
+    margin-top: 100px; 
     white-space: nowrap;
     text-align: center;
     font-size: 160px;
@@ -792,8 +792,8 @@ $linear_btn_footer2: #2b3546;
                 margin-top: 15px;
                 text-decoration: none;
                 margin-right: 20px;
-                color: #a7a9ac; 
-                font-style: italic;
+                font-weight: 500; 
+                color: $baseTxt;
                 &:hover
                 {
                     color: $baseTxt;
