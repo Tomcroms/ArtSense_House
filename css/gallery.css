@@ -37,37 +37,22 @@
   width: 100%;
   margin-bottom: 100px;
 }
-.main__info {
-  width: 44%;
-  max-width: 440px;
-  height: 50px;
-  font-size: 16px;
-  text-align: center;
-  padding: 10px 5px;
-  margin: 20px auto 40px auto;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-}
 .main__artsense {
   position: relative;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 80px;
 }
-.main__artsense__logo {
-  width: 45%;
-  height: auto;
-  border-radius: 60px;
-  margin-right: auto;
+.main__artsense img {
+  width: 100%;
 }
 .main__artsense__bloc {
-  margin: auto 0;
-  width: 45%;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,25 +66,39 @@
   max-width: 350px;
   margin-top: 30px;
 }
+.main__artsense__bloc .description {
+  margin-top: 15px;
+  width: 100%;
+  padding: 5px 10px;
+  text-align: center;
+  height: fit-content;
+  border-radius: 30px;
+  background: linear-gradient(to right, #30204e, #1a3850) padding-box, linear-gradient(to right, #8763dd, #43d5ae) border-box;
+  border: 4px solid transparent;
+}
 .main__speedy {
   position: relative;
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 80px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.main__speedy .img_bg {
+  width: 100%;
 }
 .main__speedy__logo {
-  max-width: 45%;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  width: 35%;
   border-radius: 40px;
   height: auto;
 }
 .main__speedy__bloc {
-  margin: auto 0;
-  width: 45%;
-  max-width: 45%;
-  margin-right: auto;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+  width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,6 +111,15 @@
   height: 60px;
   max-width: 350px;
   margin-top: 30px;
+}
+.main__speedy__bloc .description {
+  margin-top: 15px;
+  width: 100%;
+  height: fit-content;
+  padding: 5px 15px 5px 20px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #30204e, #1a3850) padding-box, linear-gradient(to right, #8763dd, #43d5ae) border-box;
+  border: 4px solid transparent;
 }
 .main__more {
   position: relative;
