@@ -240,7 +240,7 @@
   border-color: transparent #f3f3f4 transparent transparent;
 }
 .ecosystem__bloc__left .title h3 {
-  font-size: 2.5vw;
+  font-size: 44px;
   margin: 0 15px;
 }
 .ecosystem__bloc__left .title__triangle_right {
@@ -282,7 +282,7 @@
   margin-top: 50px;
 }
 .collection__title {
-  font-size: 3vw;
+  font-size: 36px;
   width: fit-content;
   color: transparent;
   background-image: linear-gradient(to right, #8763dd, #43d5ae);
@@ -399,7 +399,7 @@
   margin: 0 auto;
   width: 100%;
   width: fit-content;
-  font-size: 44px;
+  font-size: 36px;
   color: transparent;
   background-image: linear-gradient(to right, #8763dd, #43d5ae);
   background-clip: text;
