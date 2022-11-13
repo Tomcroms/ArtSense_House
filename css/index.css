@@ -193,8 +193,10 @@ h3 {
   margin-top: 42.5%;
   left: 39%;
   width: 45%;
-  font-style: italic;
+}
+.accueil__div_description h3 {
   font-size: 1.5vw;
+  font-style: italic;
   font-weight: 200;
 }
 
@@ -399,6 +401,7 @@ h3 {
 
 .services {
   margin-top: 80px;
+  height: 2000px;
 }
 .services h3 {
   margin: 0 auto;
@@ -425,18 +428,25 @@ h3 {
 .services__main .services_bloc {
   height: 6vw;
   width: 100%;
-  display: flex;
   padding: 0 3vw;
   border-radius: 45px;
   margin-bottom: 2vw;
   border: solid #f3f3f4 1px;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
   transition: all 0.5s;
 }
 .services__main .services_bloc h4 {
   font-size: 30px;
+  margin-left: 40%;
   margin-top: 1.2vw;
+}
+.services__main .services_bloc p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 12px;
+  font-weight: 200;
 }
 .services__main__left {
   width: 48%;

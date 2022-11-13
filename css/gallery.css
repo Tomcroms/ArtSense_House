@@ -1,3 +1,7 @@
+.body {
+  background-image: url("../img/bg_small.png");
+}
+
 .accueil {
   margin-top: 20px;
   height: 650px;
@@ -90,7 +94,7 @@
   top: 50%;
   right: 10%;
   transform: translate(0, -50%);
-  width: 35%;
+  width: 40%;
   border-radius: 40px;
   height: auto;
 }
@@ -114,7 +118,7 @@
   margin-top: 30px;
 }
 .main__speedy__bloc .description {
-  margin-top: 15px;
+  margin-top: 16px;
   width: 100%;
   height: fit-content;
   padding: 5px 15px 5px 20px;

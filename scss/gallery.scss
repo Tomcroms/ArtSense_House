@@ -3,6 +3,11 @@ $bordure: #f3f3f4;
 
 $linear_titre: linear-gradient(to right, #8763dd , #43d5ae); 
 
+.body
+{
+    background-image: url("../img/bg_small.png");
+}
+
 .accueil
 {
     margin-top: 20px; 
@@ -86,7 +91,7 @@ $linear_titre: linear-gradient(to right, #8763dd , #43d5ae);
             }
             .description
             {
-                margin-top: 16px; 
+                margin-top: 16px;  
                 width: 100%;
                 padding: 5px 10px;
                 text-align: center;
@@ -111,7 +116,7 @@ $linear_titre: linear-gradient(to right, #8763dd , #43d5ae);
             top: 50%;
             right: 10%;
             transform: translate(0,-50%);
-            width: 35%;
+            width: 40%; 
             border-radius: 40px;
             height: auto;
         }
@@ -138,7 +143,7 @@ $linear_titre: linear-gradient(to right, #8763dd , #43d5ae);
             }
             .description
             {
-                margin-top: 15px; 
+                margin-top: 16px; 
                 width: 100%;
                 height: fit-content; 
                 padding: 5px 15px 5px 20px;  
@@ -182,4 +187,4 @@ $linear_titre: linear-gradient(to right, #8763dd , #43d5ae);
         width: 45%;
         background-color: $bordure; 
     }
-}
+} 

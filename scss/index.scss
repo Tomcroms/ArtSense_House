@@ -256,10 +256,12 @@ $linear_btn_footer2: #2b3546;
         margin-top: 42.5%; 
         left: 39%; 
         width: 45%; 
-
-        font-style: italic;
-        font-size: 1.5vw;  
-        font-weight: 200; 
+        h3
+        {
+            font-size: 1.5vw;
+            font-style: italic; 
+            font-weight: 200; 
+        }
     }
 }
 
@@ -506,6 +508,7 @@ $linear_btn_footer2: #2b3546;
 .services
 {
     margin-top: 80px; 
+    height: 2000px; 
     h3
     {
         margin: 0 auto;
@@ -534,18 +537,26 @@ $linear_btn_footer2: #2b3546;
         {
             height: 6vw;  
             width: 100%;
-            display: flex;
             padding: 0 3vw;
             border-radius: 45px;    
             margin-bottom: 2vw;    
             border: solid $bordure 1px;
             box-sizing: border-box;
             position: relative;
+            overflow: hidden; 
             transition: all 0.5s;
             h4
             {
-                font-size: 30px;  
-                margin-top: 1.2vw;   
+                font-size: 30px; 
+                margin-left: 40%;  
+                margin-top: 1.2vw; 
+            }
+            p
+            {
+                text-align: justify;
+                text-justify: inter-word;
+                font-size: 12px; 
+                font-weight: 200; 
             }
         }
         &__left
@@ -793,7 +804,7 @@ $linear_btn_footer2: #2b3546;
                 text-decoration: none;
                 margin-right: 20px;
                 font-weight: 500; 
-                color: $baseTxt;
+                color: $baseTxt; 
                 &:hover
                 {
                     color: $baseTxt;

@@ -37,7 +37,7 @@ $linear_btn_footer2: #2b3546;
 }
 .body
 { 
-    background-image: url("../img/bg_small.png");
+    background-image: url("../img/background.png");
     background-size: cover;    
     color: $baseTxt;  
     display: flex;  
@@ -152,7 +152,7 @@ $linear_btn_footer2: #2b3546;
                 &:hover
                 {
                     font-weight: 800;
-                }  
+                }
             }
         }
         .separation1
@@ -176,7 +176,7 @@ $linear_btn_footer2: #2b3546;
 {
     width: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-end; 
     margin-bottom: 15px;
     &__left
     {

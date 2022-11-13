@@ -17,7 +17,7 @@ $linear_titre: linear-gradient(to right, #be49df, #43d4af);
     position: relative;
     padding: 10px 15px; 
     border-radius: 30px;
-    width: 40%; 
+    width: 32%;    
     height: fit-content; 
     margin: 150px auto 60px auto;
     background: linear-gradient(to right, #30204e, #1a3850) padding-box, $linear_titre border-box;
@@ -38,8 +38,8 @@ $linear_titre: linear-gradient(to right, #be49df, #43d4af);
     {
         position: absolute;
         left: 100%;    
-        top: 10%;  
-        width: 40%; 
+        top: 0%;
+        width: 50%;  
         transform: translate(-50%,-50%);
     } 
 }
@@ -199,7 +199,7 @@ $linear_titre: linear-gradient(to right, #be49df, #43d4af);
         height: fit-content;
         width: 33.33%;
         padding: 5px 15px;
-        font-size: 1.8vw;       
+        font-size: 28px;       
         h5
         { 
             width: 100%;
@@ -467,7 +467,7 @@ $linear_titre: linear-gradient(to right, #be49df, #43d4af);
         }
         h4
         {
-            font-size: 1.4vw;
+            font-size: 20px; 
             margin-bottom: 5px;
         }
         p
@@ -485,7 +485,7 @@ $linear_titre: linear-gradient(to right, #be49df, #43d4af);
         .title
         {
             font-size: 24px;
-            font-weight: 900;
+            font-weight: 700; 
             margin-bottom: 10px;
         }
         p
@@ -505,4 +505,9 @@ $linear_titre: linear-gradient(to right, #be49df, #43d4af);
         cursor: pointer;
         background-color: rgba(255,255,255,0.14); 
     }
+}
+
+.footer
+{
+    margin-top: 75px;
 }
