@@ -26,7 +26,7 @@ h3 {
 }
 
 .body {
-  background-image: url("../img/background.svg");
+  background-image: url("../img/bg_small.png");
   background-size: cover;
   color: #f3f3f4;
   display: flex;
@@ -61,6 +61,7 @@ h3 {
   display: flex;
   position: relative;
   overflow: hidden;
+  margin-bottom: 150px;
 }
 .accueil .video_container {
   position: absolute;

@@ -44,11 +44,11 @@ $linear_btn_footer2: #2b3546;
 
 .body
 { 
-    background-image: url("../img/background.svg");
-    background-size: cover;    
+    background-image: url("../img/bg_small.png");
+    background-size: cover;
     color: $baseTxt;  
-    display: flex;  
-    flex-direction: column;
+    display: flex;   
+    flex-direction: column; 
     align-items: center;
     margin: 0 auto;
     min-width: 1000px; 
@@ -83,6 +83,7 @@ $linear_btn_footer2: #2b3546;
     display: flex;
     position: relative;
     overflow: hidden;
+    margin-bottom: 150px;
     .video_container
     {
         position: absolute;
@@ -509,7 +510,7 @@ $linear_btn_footer2: #2b3546;
 {
     margin-top: 80px; 
     height: 2000px; 
-    h3
+    h3 
     {
         margin: 0 auto;
         width: 100%;

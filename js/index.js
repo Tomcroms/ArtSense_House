@@ -5,7 +5,7 @@ gsap.to(".innovative__o",{
         trigger: ".accueil",
         start: "top top",
         end: "+=150px",   
-        scrub: true, 
+        scrub: 1, 
         pin: ".accueil",
         toggleActions: "restart pause reverse pause"
     },
