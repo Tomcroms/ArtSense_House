@@ -129,7 +129,7 @@
 .main__more {
   position: relative;
   width: 90%;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   align-items: center;
   padding-top: 30px;

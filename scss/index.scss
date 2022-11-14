@@ -53,7 +53,8 @@ $linear_btn_footer2: #2b3546;
     margin: 0 auto;
     min-width: 1000px; 
     max-width: 1700px;
-}
+    height: auto;  
+} 
 
 .btn_bg
 {
@@ -70,10 +71,8 @@ $linear_btn_footer2: #2b3546;
 {
     background-color: $bordure;
     height: 1px;
-    margin: 0 auto;
-    margin-bottom: 50px; 
+    margin: 0 auto; 
 }
-
 
 .accueil
 {
@@ -82,14 +81,17 @@ $linear_btn_footer2: #2b3546;
     padding-bottom: 20px; 
     display: flex;
     position: relative;
-    overflow: hidden;
-    margin-bottom: 150px;
-    .video_container
+    overflow: hidden;  
+    .container
     {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%; 
+        overflow: hidden;
+        height: fit-content; 
+        video
+        {
+            width: 100%;
+            height: auto;   
+        }
     }
     &__bloc
     {
@@ -198,7 +200,7 @@ $linear_btn_footer2: #2b3546;
     {
         position: absolute;
         width: 42%;  
-        margin-top: 15%;
+        margin-top: 20%;  
         left: 21%;  
         display: flex;
         flex-direction: column;
@@ -254,7 +256,7 @@ $linear_btn_footer2: #2b3546;
     &__div_description
     {
         position: absolute;
-        margin-top: 42.5%; 
+        margin-top: 46.5%;
         left: 39%; 
         width: 45%; 
         h3

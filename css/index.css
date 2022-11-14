@@ -35,6 +35,7 @@ h3 {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1700px;
+  height: auto;
 }
 
 .btn_bg {
@@ -51,7 +52,6 @@ h3 {
   background-color: #f3f3f4;
   height: 1px;
   margin: 0 auto;
-  margin-bottom: 50px;
 }
 
 .accueil {
@@ -61,13 +61,15 @@ h3 {
   display: flex;
   position: relative;
   overflow: hidden;
-  margin-bottom: 150px;
 }
-.accueil .video_container {
-  position: absolute;
-  top: 0;
-  left: 0;
+.accueil .container {
   width: 100%;
+  overflow: hidden;
+  height: fit-content;
+}
+.accueil .container video {
+  width: 100%;
+  height: auto;
 }
 .accueil__bloc {
   border-radius: 54px;
@@ -141,7 +143,7 @@ h3 {
 .accueil__div_txt {
   position: absolute;
   width: 42%;
-  margin-top: 15%;
+  margin-top: 20%;
   left: 21%;
   display: flex;
   flex-direction: column;
@@ -191,7 +193,7 @@ h3 {
 }
 .accueil__div_description {
   position: absolute;
-  margin-top: 42.5%;
+  margin-top: 46.5%;
   left: 39%;
   width: 45%;
 }

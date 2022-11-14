@@ -6,10 +6,9 @@ gsap.to(".innovative__o",{
         start: "top top",
         end: "+=150px",   
         scrub: 1, 
-        pin: ".accueil",
         toggleActions: "restart pause reverse pause"
     },
-    width: "8vw",
+    width: "8vw", 
 });
 
 const tl = gsap.timeline();
