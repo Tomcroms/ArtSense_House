@@ -2,10 +2,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".innovative__o",{
     scrollTrigger: {
-        trigger: ".header",
+        trigger: ".premPage",
         start: "top top",
-        end: "+=250px",    
-        scrub: 1, 
+        end: "+=200px", 
+        scrub: true,  
+        pin: true, 
         toggleActions: "restart pause reverse pause"
     },
     width: "8vw", 

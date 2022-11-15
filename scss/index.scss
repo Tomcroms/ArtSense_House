@@ -2,6 +2,12 @@
 
 //<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+.premPage
+{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 150px;  
+} 
 h3
 {
     font-size: 36px; 
@@ -445,11 +451,33 @@ $linear_btn_footer2: #2b3546;
             align-items: center;
             justify-content: flex-end;
             height: fit-content;
-            img
+            .logoLien
             {
-                width: 8%;
-                border-radius: 50%;
-                margin-left: 5px; 
+                position: relative;  
+                margin-left: 20px; 
+                img
+                {
+                    width: 50px; 
+                    border-radius: 50%;
+                }
+                .popUp
+                {
+                    visibility: hidden;
+                    position: absolute;
+                    top: -35px; 
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    height: fit-content;
+                    padding: 5px 0; 
+                    width: 100px;
+                    border-radius: 10px;
+                    text-align: center; 
+                    background-color: rgba(255,255,255,0.25);   
+                }
+                &:hover .popUp
+                { 
+                    visibility: visible; 
+                }
             }
             .div_sep
             {

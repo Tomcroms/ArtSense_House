@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap");
+.premPage {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 150px;
+}
+
 h3 {
   font-size: 36px;
 }
@@ -357,10 +363,29 @@ h3 {
   justify-content: flex-end;
   height: fit-content;
 }
-.collection__header__right img {
-  width: 8%;
+.collection__header__right .logoLien {
+  position: relative;
+  margin-left: 20px;
+}
+.collection__header__right .logoLien img {
+  width: 50px;
   border-radius: 50%;
-  margin-left: 5px;
+}
+.collection__header__right .logoLien .popUp {
+  visibility: hidden;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+  padding: 5px 0;
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.collection__header__right .logoLien:hover .popUp {
+  visibility: visible;
 }
 .collection__header__right .div_sep {
   height: 100%;
