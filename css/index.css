@@ -61,9 +61,9 @@ h3 {
   display: flex;
   position: relative;
   overflow: hidden;
+  margin-top: 50px;
 }
 .accueil .container {
-  width: 100%;
   overflow: hidden;
   height: fit-content;
 }
@@ -143,7 +143,7 @@ h3 {
 .accueil__div_txt {
   position: absolute;
   width: 42%;
-  margin-top: 20%;
+  margin-top: 10%;
   left: 21%;
   display: flex;
   flex-direction: column;
@@ -193,9 +193,9 @@ h3 {
 }
 .accueil__div_description {
   position: absolute;
-  margin-top: 46.5%;
+  margin-top: 38%;
   left: 39%;
-  width: 45%;
+  width: 35%;
 }
 .accueil__div_description h3 {
   font-size: 1.5vw;
@@ -573,7 +573,7 @@ h3 {
 }
 
 .h1 {
-  margin-top: 100px;
+  margin-top: 200px;
   white-space: nowrap;
   text-align: center;
   font-size: 160px;

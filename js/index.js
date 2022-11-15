@@ -4,7 +4,7 @@ gsap.to(".innovative__o",{
     scrollTrigger: {
         trigger: ".header",
         start: "top top",
-        end: "+=250px",   
+        end: "+=250px",    
         scrub: 1, 
         toggleActions: "restart pause reverse pause"
     },
@@ -18,16 +18,13 @@ tl.to(".services__main__left__1",{translateX: "100%"}).to(".services__main__righ
 ScrollTrigger.create({
     animation: tl,
     trigger: ".services",
-    start: "0px top",
-    end:"+=1400px",
+    start: "150px top",
+    end:"+=1400px",  
     scrub: true,
-    pin: true,
-    pinSpacing: false, 
+    pin: true, 
     toogleActions: "restart pause reverse pause",
-    anticipatePin: 1
 });
-
-
+//anticipatePin: 1 si ça continue de scroll 
 
 // gsap.to(".services__main__left__1",{
 //     scrollTrigger: {
