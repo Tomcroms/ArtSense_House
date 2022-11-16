@@ -323,13 +323,17 @@
 }
 .account__social {
   display: flex;
-  width: 12%;
+  align-items: center;
+  width: 16%;
   height: fit-content;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 .account__social img {
   width: 40%;
+  height: auto;
+  border-radius: 0px;
+  cursor: pointer;
 }
 .account__info {
   width: 100%;

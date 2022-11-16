@@ -382,13 +382,17 @@ $linear_titre: linear-gradient(to right, #be49df, #43d4af);
     &__social
     {
         display: flex;
-        width: 12%; 
+        align-items: center;  
+        width: 16%; 
         height: fit-content;
         justify-content: space-between;
         margin-bottom: 30px;
         img
         {
-            width: 40%;  
+            width: 40%; 
+            height: auto; 
+            border-radius: 0px;
+            cursor: pointer;
         }
     }
     &__info

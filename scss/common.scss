@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&display=swap'); 
 
+$baseTxt: #f3f3f4;
+$bordure: #f3f3f4;
+
+::placeholder
+{
+    color: $baseTxt; 
+    opacity: 1;
+}
+
 ::-webkit-scrollbar
 {
     width: 10px; 
@@ -16,9 +25,6 @@
     background-color: white; 
     border-radius: 20px;
 }
-
-$baseTxt: #f3f3f4;
-$bordure: #f3f3f4;
 
 $linear_titre: linear-gradient(to right, #8763dd , #43d5ae);
 
@@ -204,7 +210,8 @@ $linear_btn_footer2: #2b3546;
                     border-radius: 30px 0 0 30px;
                     box-sizing: border-box;
                     padding: 0 10px;
-                    background-color: #6bbeca;
+                    color: black; 
+                    background-color: rgba($color: #6bbeca, $alpha: 0.50);
                 }
             }
             .subscribe
@@ -215,8 +222,8 @@ $linear_btn_footer2: #2b3546;
                 font-weight: 700; 
                 color: $baseTxt;
                 border-radius: 0 30px 30px 0;
-                background-image: linear-gradient(to right, $linear_btn_footer1, $linear_btn_footer2);
-            }
+                background-image: $linear_titre;
+            } 
         }
         &__info
         {
@@ -231,7 +238,20 @@ $linear_btn_footer2: #2b3546;
         width: 34%;
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
+        &__btn
+        {
+            height: 70px; 
+            width: 250px;  
+            border-radius: 55px;   
+            border: 5px solid transparent;
+            background: linear-gradient(to right, #06122f, #0a0e2d) padding-box, $linear_titre border-box;
+            font-size: 20px; 
+            color: $baseTxt; 
+            font-weight: 900; 
+            margin-bottom: 30px; 
+            cursor: not-allowed;    
+        } 
         &__nav
         {
             display: flex;
@@ -300,17 +320,17 @@ $linear_btn_footer2: #2b3546;
                 font-weight: 700;
                 color: $baseTxt; 
                 border-radius: 30px 0 0 30px;
-                background-image: linear-gradient(to left, $linear_btn_footer1, $linear_btn_footer2);
+                background-image: linear-gradient(to right, #43d5ae , #8763dd); 
             }
             .contactEmail
             {
                 width: 60%;
                 height: 100%;
                 display: flex;
+                color: $baseTxt; 
                 align-items: center;
-                color: black; 
                 justify-content: center;
-                background-color: #6bbeca;
+                background-color: rgba($color: #6bbeca, $alpha: 0.50); 
                 border-radius: 0 30px 30px 0;
             }
         }

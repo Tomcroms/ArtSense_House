@@ -32,7 +32,7 @@ h3 {
 }
 
 .body {
-  background-image: url("../img/bg_small.png");
+  background-image: linear-gradient(to bottom, red, blue);
   background-size: cover;
   color: #f3f3f4;
   display: flex;
@@ -118,9 +118,10 @@ h3 {
   min-width: 7.1%;
 }
 .accueil .rond3 {
-  margin: 13% 1% 0 1%;
-  position: relative;
-  left: -40px;
+  position: absolute;
+  top: 30%;
+  left: 74.8%;
+  transform: translate(-50%, -50%);
   min-width: 7%;
   height: fit-content;
   padding-top: 7%;
@@ -239,43 +240,71 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
-.ecosystem__bloc__left .title {
+.ecosystem__bloc__left__selection {
+  width: 100%;
+}
+.ecosystem__bloc__left__selection .title {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   margin-bottom: 6px;
   color: #f3f3f4;
 }
-.ecosystem__bloc__left .title__triangle_left {
+.ecosystem__bloc__left__selection .title__triangle_left {
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0.57vw 1vw 0.57vw 0;
   border-color: transparent #f3f3f4 transparent transparent;
+  cursor: not-allowed;
 }
-.ecosystem__bloc__left .title h3 {
+.ecosystem__bloc__left__selection .title__triangle_left:hover {
+  transform: scale(115%);
+}
+.ecosystem__bloc__left__selection .title h3 {
   font-size: 44px;
   margin: 0 15px;
+  text-align: center;
+  width: 70%;
 }
-.ecosystem__bloc__left .title__triangle_right {
+.ecosystem__bloc__left__selection .title__triangle_right {
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0.57vw 1vw 0.57vw;
   border-color: transparent transparent transparent #f3f3f4;
+  cursor: pointer;
 }
-.ecosystem__bloc__left .title__separation {
-  margin-top: 10px;
-  width: 80%;
+.ecosystem__bloc__left__selection .title__triangle_right:hover {
+  transform: scale(115%);
+}
+.ecosystem__bloc__left__selection .title__separation {
+  margin: 10px auto 0 auto;
+  width: 90%;
   height: 1px;
   background-image: linear-gradient(to right, #8763dd, #43d5ae);
 }
-.ecosystem__bloc__left .description {
+.ecosystem__bloc__left__carroussel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.ecosystem__bloc__left__carroussel .pillier {
+  position: relative;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100%;
+  transition: all 0.5s;
+}
+.ecosystem__bloc__left__carroussel .pillier .description {
   width: 80%;
   margin-top: 4vw;
 }
-.ecosystem__bloc__left .description p {
+.ecosystem__bloc__left__carroussel .pillier .description p {
   margin-bottom: 20px;
   text-align: justify;
   text-justify: inter-word;
@@ -368,13 +397,13 @@ h3 {
   margin-left: 20px;
 }
 .collection__header__right .logoLien img {
-  width: 50px;
-  border-radius: 50%;
+  width: 30px;
+  cursor: pointer;
 }
 .collection__header__right .logoLien .popUp {
   visibility: hidden;
   position: absolute;
-  top: -35px;
+  top: -45px;
   left: 50%;
   transform: translate(-50%, -50%);
   height: fit-content;
@@ -407,11 +436,12 @@ h3 {
   width: auto;
   border-radius: 25px;
   margin: 0 5px;
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 .collection__carroussel .ligne img:hover {
   cursor: pointer;
-  transform: rotate(20deg);
+  transform: scale(115%);
+  margin: 0 20px;
 }
 .collection__carroussel .ligne .nftLigne1 {
   position: relative;
@@ -429,7 +459,8 @@ h3 {
 
 .services {
   margin-top: 80px;
-  height: 2000px;
+  height: fit-content;
+  margin-bottom: 1300px;
 }
 .services h3 {
   margin: 0 auto;
@@ -454,7 +485,7 @@ h3 {
   font-weight: 900;
 }
 .services__main .services_bloc {
-  height: 6vw;
+  height: 100px;
   width: 100%;
   padding: 0 3vw;
   border-radius: 45px;
@@ -468,7 +499,7 @@ h3 {
 .services__main .services_bloc h4 {
   font-size: 30px;
   margin-left: 40%;
-  margin-top: 1.2vw;
+  margin-top: 30px;
 }
 .services__main .services_bloc p {
   text-align: justify;
@@ -514,7 +545,6 @@ h3 {
   overflow: hidden;
   align-items: center;
   position: relative;
-  z-index: 15000;
 }
 .services__main__center .ligneCentrale {
   margin: auto auto;
@@ -609,142 +639,6 @@ h3 {
 .h1 h1 {
   position: relative;
   left: -250px;
-}
-
-.footer {
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 15px;
-}
-.footer__left {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer__left__div {
-  height: 40px;
-  width: 80%;
-  border-radius: 30px;
-  display: flex;
-}
-.footer__left__div .email {
-  width: 60%;
-  height: 100%;
-  border-radius: 30px 0 0 30px;
-}
-.footer__left__div .email input {
-  max-width: 100%;
-  width: 100%;
-  max-height: 100%;
-  height: 100%;
-  border-radius: 30px 0 0 30px;
-  box-sizing: border-box;
-  padding: 0 10px;
-  background-color: #6bbeca;
-}
-.footer__left__div .subscribe {
-  width: 40%;
-  height: 100%;
-  font-size: 14px;
-  font-weight: 700;
-  color: #f3f3f4;
-  border-radius: 0 30px 30px 0;
-  background-image: linear-gradient(to right, #185263, #2b3546);
-}
-.footer__left__info {
-  width: 80%;
-  font-size: 10px;
-  text-align: center;
-  margin: 10px auto;
-}
-.footer__center {
-  width: 34%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer__center__btn {
-  height: 70px;
-  width: 250px;
-  border-radius: 55px;
-  border: 5px solid transparent;
-  background: linear-gradient(to right, #06122f, #0a0e2d) padding-box, linear-gradient(to right, #8763dd, #43d5ae) border-box;
-  font-size: 20px;
-  color: #f3f3f4;
-  font-weight: 900;
-  margin-bottom: 30px;
-}
-.footer__center__nav {
-  display: flex;
-  width: fit-content;
-  margin-bottom: 30px;
-}
-.footer__center__nav .footer__lien {
-  margin-top: 15px;
-  text-decoration: none;
-  margin-right: 20px;
-  font-weight: 500;
-  color: #f3f3f4;
-}
-.footer__center__nav .footer__lien:hover {
-  color: #f3f3f4;
-}
-.footer__center__nav .last {
-  margin-right: 0px;
-}
-.footer__center__logos {
-  margin: 10px auto;
-  display: flex;
-  justify-content: space-between;
-  width: 120px;
-  height: 40px;
-}
-.footer__center__logos img {
-  max-height: 100%;
-  height: 100%;
-  width: auto;
-}
-.footer__center p {
-  margin: 10px 0;
-  width: 100%;
-  font-size: 10px;
-  text-align: center;
-}
-.footer__right {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer__right__div {
-  position: relative;
-  top: -30px;
-  height: 40px;
-  width: 80%;
-  border-radius: 30px;
-  display: flex;
-}
-.footer__right__div .contact {
-  width: 40%;
-  height: 100%;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 700;
-  color: #f3f3f4;
-  border-radius: 30px 0 0 30px;
-  background-image: linear-gradient(to left, #185263, #2b3546);
-}
-.footer__right__div .contactEmail {
-  width: 60%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  color: black;
-  justify-content: center;
-  background-color: #6bbeca;
-  border-radius: 0 30px 30px 0;
 }
 
 .rond-type1 {
