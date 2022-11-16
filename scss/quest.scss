@@ -285,23 +285,6 @@ $linear_titre: linear-gradient(to right, #be49df, #43d4af);
                     font-size: 1vw; 
                 }
             }
-            .infoXP
-            { 
-                width: 15%;      
-                height: 100%;  
-                border-radius: 20px; 
-                background: linear-gradient(to right, #30204e, #1a3850) padding-box, $linear_titre border-box;
-                border: 2px solid transparent;
-                display: flex;
-                align-items: center;
-                p
-                {
-                    height: fit-content; 
-                    font-weight: 700;
-                    font-size: 12px;
-                    margin: auto;
-                } 
-            }
         }
         .bloc__div__flex
         {
@@ -337,9 +320,22 @@ $linear_titre: linear-gradient(to right, #be49df, #43d4af);
             width: 45%; 
             align-items: center;
             justify-content: center;
-            img
-            {
-                width: 70%;
+            .infoXP
+            { 
+                width: 35%;       
+                height: 30px;  
+                border-radius: 20px; 
+                background: linear-gradient(to right, #30204e, #1a3850) padding-box, $linear_titre border-box;
+                border: 2px solid transparent;
+                display: flex;
+                align-items: center;
+                p
+                {
+                    height: fit-content; 
+                    font-weight: 700;
+                    font-size: 12px;
+                    margin: auto;
+                } 
             }
         }
         &:hover

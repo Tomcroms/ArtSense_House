@@ -19,7 +19,7 @@ tl.to(".services__main__left__1",{translateX: "100%"}).to(".services__main__righ
 ScrollTrigger.create({
     animation: tl,
     trigger: ".services",
-    start: "50px top", 
+    start: "-20px top",
     end:"+=1400px",  
     scrub: true,
     pin: true, 
