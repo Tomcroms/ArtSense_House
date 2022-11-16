@@ -364,8 +364,7 @@ $linear_btn_footer2: #2b3546;
             &__carroussel
             {
                 width: 100%;
-                display: flex;
-                align-items: center; 
+                display: flex;  
                 overflow: hidden; 
                 .pillier
                 {
@@ -617,7 +616,7 @@ $linear_btn_footer2: #2b3546;
                 margin-left: 40%;  
                 margin-top: 30px;  
             }
-            p
+            p 
             {
                 text-align: justify;
                 text-justify: inter-word;
