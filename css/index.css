@@ -437,18 +437,14 @@ h3 {
   margin: 0 5px;
   transition: all 0.2s;
 }
-.collection__carroussel .ligne img:hover {
-  cursor: pointer;
-  transform: scale(115%);
-  margin: 0 20px;
-}
 .collection__carroussel .ligne .nftLigne1 {
   position: relative;
   left: -60px;
 }
-.collection__carroussel .ligne .nftLigne2 {
-  position: relative;
-  left: -15px;
+.collection__carroussel .ligne .nftHover:hover {
+  cursor: pointer;
+  transform: scale(115%);
+  margin: 0 20px;
 }
 
 .separation4 {

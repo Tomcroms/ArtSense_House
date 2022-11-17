@@ -537,28 +537,18 @@ $linear_btn_footer2: #2b3546;
                 border-radius: 25px;  
                 margin: 0 5px;
                 transition: all 0.2s; 
-                &:hover
-                {
-                    cursor: pointer;
-                    transform: scale(115%);
-                    margin: 0 20px;   
-                }
-                // &:hover
-                // {
-                //     cursor: pointer;
-                //     transform: rotate(20deg);
-                // }
             }
             .nftLigne1
             {
                 position: relative;
                 left: -60px;
             }
-            .nftLigne2
+            .nftHover:hover
             {
-                position: relative;
-                left: -15px;
-            }
+                cursor: pointer;
+                transform: scale(115%);
+                margin: 0 20px;   
+            } 
         }
     }
 }
