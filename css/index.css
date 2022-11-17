@@ -71,9 +71,13 @@ h3 {
 }
 .accueil .container {
   overflow: hidden;
+  padding-top: 45%;
   height: fit-content;
 }
 .accueil .container video {
+  position: absolute;
+  top: 0px;
+  left: 0;
   width: 100%;
   height: auto;
 }

@@ -92,10 +92,14 @@ $linear_btn_footer2: #2b3546;
     .container
     {
         overflow: hidden;
+        padding-top: 45%;
         height: fit-content; 
         video 
         {
-            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 100%; 
             height: auto; 
         }
     }
