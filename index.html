@@ -96,8 +96,8 @@
                 </div>
             </div>
             <div class="ecosystem__bloc__right">
-                <img src="./img/spline_img.png" alt="spline img">
-            </div>
+                <canvas id="canvas3d"></canvas>
+            </div> 
         </div>
     </section> 
     <section class="collection">
@@ -204,5 +204,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="./js/index.js"></script>
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.141/build/runtime.js"
+          }
+        }
+      </script>
+    <script type="module">  
+        import {ecosystemRight1to2,ecosystemRight2to3,ecosystemRight3to4,ecosystemLeft2to1,ecosystemLeft3to2,ecosystemLeft4to3} from "./js/spline.js";  
+        window.ecosystemRight1to2 = ecosystemRight1to2;
+        window.ecosystemRight2to3 = ecosystemRight2to3;
+        window.ecosystemRight3to4 = ecosystemRight3to4;
+        window.ecosystemLeft4to3 = ecosystemLeft4to3;
+        window.ecosystemLeft3to2 = ecosystemLeft3to2;
+        window.ecosystemLeft2to1 = ecosystemLeft2to1;
+    </script>
 </body>
 </html>
