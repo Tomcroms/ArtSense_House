@@ -239,6 +239,7 @@ $linear_btn_footer2: #2b3546;
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            margin: 5px 0; 
 
             font-size: 5.2vw;
             font-weight: 700; 
@@ -248,6 +249,10 @@ $linear_btn_footer2: #2b3546;
             .rond1{
                 width: 14%;
                 padding-top: 14%;
+            }
+            img
+            {
+                width: 82%;   
             }
         }
         .art
