@@ -229,7 +229,7 @@ h3 {
 }
 .ecosystem__bloc {
   width: 80%;
-  height: fit-content;
+  height: 500px;
   padding: 5vw 4vw;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.05);
@@ -321,7 +321,6 @@ h3 {
   overflow: hidden;
 }
 .ecosystem__bloc__right canvas {
-  min-height: 100%;
   width: auto;
 }
 
