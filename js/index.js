@@ -1,3 +1,9 @@
+const loader = document.getElementById("loader");
+window.addEventListener("load",function(){
+    loader.style.display = "none";
+});
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".innovative__o",{

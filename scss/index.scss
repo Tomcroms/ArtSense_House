@@ -48,6 +48,23 @@ $linear_btn_footer2: #2b3546;
     font-family: "Montserrat"; //font-style: italic; pour l'italic
 }
 
+.loadingPage
+{
+    height: 100vh;
+    width: 100%;
+    background-color: #03112c;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    img
+    {
+        height: 100px;
+        width: auto;
+    }
+}
+
 .body
 { 
     background-image: linear-gradient(to bottom, red, blue); 
