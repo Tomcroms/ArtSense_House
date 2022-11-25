@@ -1,0 +1,142 @@
+.main {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+}
+.main__left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__left img {
+  width: 30%;
+  height: auto;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+.main__left .username {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.main__left .wallet {
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+.main__left .social {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__left .social img {
+  width: 40%;
+  height: auto;
+  border-radius: 0;
+}
+.main__left__info {
+  width: 70%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__left__info h6 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.main__left__info p {
+  font-size: 16px;
+  font-weight: 200;
+}
+.main__left__barreXP {
+  height: 8px;
+  width: 70%;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #8763dd, #43d5ae);
+  position: relative;
+}
+.main__left__barreXP_point {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f3f3f4;
+  position: absolute;
+  transform: translate(-50%, -30%);
+}
+.main__left__credit {
+  margin-top: 20px;
+  height: 60px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background: linear-gradient(to right, #8763dd, #43d5ae) padding-box, linear-gradient(to right, #FFF, #FFF) border-box;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__right {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__right__editProfile {
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  background: linear-gradient(to right, #06122f, #0a0e2d) padding-box, linear-gradient(to right, #8763dd, #43d5ae) border-box;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__right__editProfile p {
+  font-size: 12px;
+  font-weight: 600;
+}
+.main__right__flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+.main__right__flex p {
+  margin-right: 40px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.main__right__flex img {
+  width: 80px;
+  height: auto;
+  border-radius: 0;
+}
+
+.accountNav {
+  margin: 30px 0;
+  width: 90%;
+}
+.accountNav__selection {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.accountNav__barre {
+  height: 2px;
+  width: 100%;
+  background-image: linear-gradient(to right, #8763dd, #43d5ae);
+}
+
+.footer {
+  margin-top: 400px;
+}
+
+/*# sourceMappingURL=account.css.map */

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch scss/index.scss:css/index.css --watch scss/gallery.scss:css/gallery.css --watch scss/quest.scss:css/quest.css --watch scss/common.scss:css/common.css --watch scss/connectWithArtSense.scss:css/connectWithArtSense.css",
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "sass": "sass --watch scss/index.scss:css/index.css --watch scss/gallery.scss:css/gallery.css --watch scss/quest.scss:css/quest.css --watch scss/common.scss:css/common.css --watch scss/connectWithArtSense.scss:css/connectWithArtSense.css --watch scss/account.scss:css/account.css --watch scss/speedyEcosystem.scss:css/speedyEcosystem.css",
     "start": "serve"
   },
   "author": "",

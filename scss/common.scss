@@ -174,7 +174,10 @@ $linear_btn_footer2: #2b3546;
         height: 50px;
         width: 120px; 
         min-width: 80px;
-        margin-right: 25px; 
+        margin-right: 25px;
+        padding: 0 8px; 
+        overflow: hidden;
+        text-overflow: ellipsis;  
     }
 }
 

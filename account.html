@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/logo_artSense_blanc.png">
+    <link rel="stylesheet" href="./css/account.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <title>ArtSense Account</title>
+</head>
+<body class="body"> 
+    <header class="header">
+        <img class="header__logo" src = "./img/logo_artSense_blanc.png" alt="logo ArtSense"/>
+        <div class="header__center">
+            <div class="header__center__center1">
+                <form class="center1__recherche">
+                    <img src="./img/loupe2.png" alt="recherche">
+                    <input type="search">
+                </form>
+                <button class="center1__boutonArtist btn_bg">
+                    <p>Artist Incubator</p>
+                </button>
+            </div>
+            <div class="header__center__center2">
+                <a class="center2__lien" href="./gallery.html">Gallery</a>
+                <a class="center2__lien" href="#">DAO</a>
+                <a class="center2__lien" href="./quest.html">Quest</a>
+                <a class="center2__lien center2__lien__last" href="#">Others</a>
+            </div>
+            <div class="separation1 barreSeparation"></div>
+        </div>
+        <button class="header__boutonSign btn_bg" id="btnSignIn" onclick="connectWallet()">
+            <p>Sign In</p>
+        </button>
+    </header>
+
+    <main class="main">
+        <div class="main__left">
+            <img src="./img/144.png" alt="account img">
+            <h4 class="username">USERNAME</h4>
+            <h5 class="wallet">0xC5...f3C2f143B</h5>
+            <div class="social">
+                <img src="./img/twitter_logo.png" alt="twitter logo">
+                <img src="./img/discord_logo.png" alt="twitter logo">
+            </div>
+            <div class="main__left__info">
+                <h6>Level 0</h6>
+                <p>300 xp until next level</p>
+            </div>
+            <div class="main__left__barreXP"><div class="main__left__barreXP_point"></div></div>
+            <div class="main__left__credit"><h4>385 CREDITS</h4></div>
+        </div>
+        <div class="main__right">
+            <div class="main__right__editProfile"><p>Edit Profile</p></div>
+            <div class="main__right__flex"><p>2</p><img src="./dossImg/imgAccount/rewardIMG.png" alt="rewardLogo"></div>
+            <div class="main__right__flex"><p>0</p><img src="./dossImg/imgAccount/trophyIMG.png" alt="trophyLogo"></div>
+        </div>
+    </main>
+    <nav class="accountNav">
+        <div class="accountNav__selection"><h3>Collection</h3><h3>Activity</h3><h3>Notification</h3></div>
+        <div class="accountNav__barre"></div>
+    </nav>
+    <section class="carroussel">
+        <div class="carroussel__section"></div>
+        <div class="carroussel__section"></div>
+        <div class="carroussel__section"></div>
+    </section>
+    <footer class="footer">
+        <div class="footer__left">
+            <div class="footer__left__div">
+                <form class="email"><input type="email" placeholder="Email"/></form>
+                <button class="subscribe"><p>Subscribe</p></button>
+            </div>
+            <p class="footer__left__info">Subscribe to received updates about our Artist Incubator</p>
+        </div>
+        <div class="footer__center">
+            <button class="footer__center__btn"><h5>ARTIST INCUBATOR APPLICATION</h5></button>
+            <div class="footer__center__nav">
+                <a class="footer__lien" href="./gallery.html">Gallery</a>
+                <a class="footer__lien" href="#">DAO</a>
+                <a class="footer__lien" href="./quest.html">Quest</a>
+                <a class="footer__lien last" href="#">Others</a>
+            </div>
+            <div class="footer__center__logos">
+                <img src="./img/twitter_logo.png" alt="logo twitter">
+                <img src="./img/discord_logo.png" alt="logo discord">
+            </div>
+            <p>Copyright 2022 (c) - ArtSense - All Rights Reserved - Privacy Policy</p>
+        </div>
+        <div class="footer__right">
+            <div class="footer__right__div">
+                <button class="contact"><p>Contact</p></button>
+                <div class="contactEmail"><p>contact@artsense.fr</p></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -33,7 +33,7 @@
                 </div>
                 <div class="separation1 barreSeparation"></div>
             </div>
-            <button class="header__boutonSign btn_bg">
+            <button class="header__boutonSign btn_bg" id="btnSignIn" onclick="connectWallet()">
                 <p>Sign In</p>
             </button>
         </header>
@@ -113,9 +113,9 @@
                 </div>
             </div>
             <div class="collection__header__right">
-                <div class="logoLien"><img src="./img/logoInsta.png" alt="logo instagram"><div class="popUp"><p>Instagram</p></div></div>
-                <div class="logoLien"><img src="./img/logoWebsite.png" alt="logo site speedy"><div class="popUp"><p>Website</p></div></div>
-                <div class="logoLien"><img src="./img/logoWikipedia.png" alt="logo twitter"><div class="popUp"><p>Wikipedia</p></div></div>
+                <a class="logoLien" href="https://www.instagram.com/speedygraphito/?hl=fr"><img src="./img/logoInsta.png" alt="logo instagram"><div class="popUp"><p>Instagram</p></div></a>
+                <a class="logoLien" href="https://fr.wikipedia.org/wiki/Speedy_Graphito"><img src="./img/logoWikipedia.png" alt="logo twitter"><div class="popUp"><p>Wikipedia</p></div></a>
+                <a class="logoLien" href="http://speedygraphito.free.fr"><img src="./img/logoWebsite.png" alt="logo site speedy"><div class="popUp"><p>Website</p></div></a>
                 <div class="div_sep"></div>
                 <div class="heart"></div>   
             </div>
@@ -222,5 +222,6 @@
         window.ecosystemLeft3to2 = ecosystemLeft3to2;
         window.ecosystemLeft2to1 = ecosystemLeft2to1; 
     </script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js" type="text/javascript"></script>
 </body>
 </html>

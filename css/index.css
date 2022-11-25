@@ -418,6 +418,9 @@ h3 {
 .collection__header__right .logoLien {
   position: relative;
   margin-left: 20px;
+  display: block;
+  height: fit-content;
+  width: fit-content;
 }
 .collection__header__right .logoLien img {
   width: 30px;
@@ -428,6 +431,7 @@ h3 {
   position: absolute;
   top: -45px;
   left: 50%;
+  color: #f3f3f4;
   transform: translate(-50%, -50%);
   height: fit-content;
   padding: 5px 0;

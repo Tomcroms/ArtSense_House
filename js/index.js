@@ -4,6 +4,27 @@ window.addEventListener("load",function(){
 });
 
 
+async function connectWallet()
+{
+    if(window.ethereum !== 'undefined')
+    {
+		const provider = new ethers.providers.Web3Provider(window.ethereum);
+		let accounts = await provider.send("eth_requestAccounts", []);
+		const signer = await provider.getSigner();
+		let account = accounts[0];
+
+        let btn = document.getElementById("btnSignIn");
+        btn.textContent = accounts[0];
+		btn.removeAttribute("onclick");
+	}
+    else
+    {
+		document.getElementById("bouton").style.width = "140px";
+		document.getElementById("bouton").textContent = "Please install metamask";
+    }
+}
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".innovative__o",{

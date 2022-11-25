@@ -1,0 +1,43 @@
+.dragContainer
+{
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow: scroll; 
+}
+
+.flex
+{
+    width: 3000px;
+    height: 250px;
+    margin-top: 40px; 
+}
+
+.flex1
+{
+    background-image: linear-gradient(to right, red, blue);
+}
+
+.flex2
+{
+    background-image: linear-gradient(to right, green, blue);
+}
+
+.flex3
+{
+    background-image: linear-gradient(to right, yellow, blue);
+}
+
+.flex4
+{
+    background-image: linear-gradient(to right, brown, blue);
+}
+
+.flex5
+{
+    background-image: linear-gradient(to right, black, blue);
+}
+
+.flex6
+{
+    background-image: linear-gradient(to right, purple, blue);
+}
